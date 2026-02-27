@@ -76,6 +76,7 @@ export default function PriceChart({ flows }: PriceChartProps) {
               fontSize: "12px",
             }}
             labelStyle={{ color: "#888888" }}
+            itemStyle={{ color: "#e0e0e0" }}
             formatter={(value?: number) => [`$${(value ?? 0).toFixed(2)}`, "Close"]}
             labelFormatter={(label) => {
               const d = new Date(String(label));

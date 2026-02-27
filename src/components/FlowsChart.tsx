@@ -149,6 +149,7 @@ export default function FlowsChart({ flows }: FlowsChartProps) {
               fontSize: "12px",
             }}
             labelStyle={{ color: "#888888" }}
+            itemStyle={{ color: "#e0e0e0" }}
             formatter={(value?: number, name?: string) => [
               formatCurrency(value ?? 0, true),
               name === "cumulative_flow" ? "Cumulative" : "Flow",
