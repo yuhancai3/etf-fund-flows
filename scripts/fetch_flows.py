@@ -76,33 +76,15 @@ def fetch_etf_data(ticker: str) -> dict:
     print(f"Fetching data for {ticker}...")
     etf = yf.Ticker(ticker)
 
-    # 1. Get shares outstanding history from yfinance
-    shares = etf.get_shares_full(start="2020-01-01")
-    if shares is not None and not shares.empty:
-        # Remove duplicate dates (keep last value per date)
-        shares.index = pd.to_datetime(shares.index).date
-        shares = shares.groupby(shares.index).last()
-        shares = pd.Series(shares.values.flatten(), index=pd.DatetimeIndex(shares.index))
-        shares.name = "shares_outstanding"
-        print(f"  yfinance shares: {len(shares)} data points")
+    # 1. Get shares outstanding from iShares history (primary source)
+    # We do NOT use yfinance shares data — it can be years stale and causes
+    # artificial $B spikes when merged with fresh iShares scrapes.
+    shares = load_shares_history(ticker)
+    if not shares.empty:
+        print(f"  iShares shares: {len(shares)} data points")
     else:
-        shares = pd.Series(dtype=float)
-        print(f"  yfinance shares: 0 data points")
-
-    # 1b. Load accumulated iShares history and merge (iShares takes priority)
-    ishares_shares = load_shares_history(ticker)
-    if not ishares_shares.empty:
-        print(f"  iShares history: {len(ishares_shares)} data points")
-        # Combine: iShares overwrites yfinance where dates overlap
-        combined = shares.copy()
-        for date, value in ishares_shares.items():
-            combined[date] = value
-        shares = combined.sort_index()
-        print(f"  Combined shares: {len(shares)} data points")
-
-    if shares.empty:
         print(f"  WARNING: No shares outstanding data for {ticker}")
-        return None
+        print(f"  Run the iShares scraper daily to accumulate data")
 
     # 2. Get price/NAV history
     hist = etf.history(period="max")
@@ -113,9 +95,8 @@ def fetch_etf_data(ticker: str) -> dict:
     hist.index = hist.index.tz_localize(None)
 
     # 3. Merge on date and forward-fill shares outstanding
-    # Shares data from yfinance can be very sparse (only reported on change dates).
-    # iShares data adds daily granularity over time.
-    # We forward-fill so every trading day gets the last known shares value.
+    # iShares data accumulates daily. We forward-fill so every trading day
+    # gets the last known shares value.
     df = pd.DataFrame({"close": hist["Close"]})
     df["shares"] = shares
     df["shares"] = df["shares"].ffill()
