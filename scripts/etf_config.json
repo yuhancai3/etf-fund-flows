@@ -1,3 +1,9 @@
 {
-  "tickers": ["EWY"]
+  "tickers": [
+    {
+      "symbol": "EWY",
+      "ishares_product_id": "239681",
+      "ishares_name": "ishares-msci-south-korea-capped-etf"
+    }
+  ]
 }

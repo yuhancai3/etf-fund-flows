@@ -9,6 +9,7 @@ and outputs JSON for the frontend.
 Formula: Daily Fund Flow = (Shares_Today - Shares_Yesterday) x NAV_Today
 """
 
+import csv
 import json
 import os
 import sys
@@ -18,13 +19,56 @@ from pathlib import Path
 import pandas as pd
 import yfinance as yf
 
+from scrape_ishares import scrape_all as scrape_ishares
 
-def load_config() -> list[str]:
-    """Load ticker list from config file."""
+SHARES_HISTORY_CSV = Path(__file__).parent.parent / "public" / "data" / "shares_history.csv"
+
+
+def load_config() -> list[dict]:
+    """Load ticker configs from config file.
+
+    Returns list of dicts with at minimum a 'symbol' key.
+    """
     config_path = Path(__file__).parent / "etf_config.json"
     with open(config_path) as f:
         config = json.load(f)
-    return config["tickers"]
+
+    tickers = config["tickers"]
+    # Support both old format (list of strings) and new format (list of dicts)
+    result = []
+    for t in tickers:
+        if isinstance(t, str):
+            result.append({"symbol": t})
+        else:
+            result.append(t)
+    return result
+
+
+def load_shares_history(ticker: str) -> pd.Series:
+    """Load accumulated shares history from CSV for a given ticker.
+
+    Returns a Series indexed by DatetimeIndex with shares outstanding values.
+    """
+    if not SHARES_HISTORY_CSV.exists():
+        return pd.Series(dtype=float)
+
+    rows = []
+    with open(SHARES_HISTORY_CSV, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row["ticker"] == ticker:
+                rows.append({
+                    "date": pd.Timestamp(row["date"]),
+                    "shares": int(row["shares_outstanding"]),
+                })
+
+    if not rows:
+        return pd.Series(dtype=float)
+
+    df = pd.DataFrame(rows)
+    series = pd.Series(df["shares"].values, index=pd.DatetimeIndex(df["date"]))
+    series.name = "shares_outstanding"
+    return series
 
 
 def fetch_etf_data(ticker: str) -> dict:
@@ -32,17 +76,33 @@ def fetch_etf_data(ticker: str) -> dict:
     print(f"Fetching data for {ticker}...")
     etf = yf.Ticker(ticker)
 
-    # 1. Get shares outstanding history
+    # 1. Get shares outstanding history from yfinance
     shares = etf.get_shares_full(start="2020-01-01")
-    if shares is None or shares.empty:
+    if shares is not None and not shares.empty:
+        # Remove duplicate dates (keep last value per date)
+        shares.index = pd.to_datetime(shares.index).date
+        shares = shares.groupby(shares.index).last()
+        shares = pd.Series(shares.values.flatten(), index=pd.DatetimeIndex(shares.index))
+        shares.name = "shares_outstanding"
+        print(f"  yfinance shares: {len(shares)} data points")
+    else:
+        shares = pd.Series(dtype=float)
+        print(f"  yfinance shares: 0 data points")
+
+    # 1b. Load accumulated iShares history and merge (iShares takes priority)
+    ishares_shares = load_shares_history(ticker)
+    if not ishares_shares.empty:
+        print(f"  iShares history: {len(ishares_shares)} data points")
+        # Combine: iShares overwrites yfinance where dates overlap
+        combined = shares.copy()
+        for date, value in ishares_shares.items():
+            combined[date] = value
+        shares = combined.sort_index()
+        print(f"  Combined shares: {len(shares)} data points")
+
+    if shares.empty:
         print(f"  WARNING: No shares outstanding data for {ticker}")
         return None
-
-    # Remove duplicate dates (keep last value per date)
-    shares.index = pd.to_datetime(shares.index).date
-    shares = shares.groupby(shares.index).last()
-    shares = pd.Series(shares.values.flatten(), index=pd.DatetimeIndex(shares.index))
-    shares.name = "shares_outstanding"
 
     # 2. Get price/NAV history
     hist = etf.history(period="max")
@@ -54,6 +114,7 @@ def fetch_etf_data(ticker: str) -> dict:
 
     # 3. Merge on date and forward-fill shares outstanding
     # Shares data from yfinance can be very sparse (only reported on change dates).
+    # iShares data adds daily granularity over time.
     # We forward-fill so every trading day gets the last known shares value.
     df = pd.DataFrame({"close": hist["Close"]})
     df["shares"] = shares
@@ -148,17 +209,29 @@ def fetch_etf_data(ticker: str) -> dict:
 
 
 def main():
-    tickers = load_config()
+    ticker_configs = load_config()
     output_dir = Path(__file__).parent.parent / "public" / "data"
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    for ticker in tickers:
-        data = fetch_etf_data(ticker)
+    # Step 0: Scrape iShares for today's shares outstanding
+    print("=== Scraping iShares for shares outstanding ===")
+    try:
+        scrape_ishares()
+    except Exception as e:
+        print(f"WARNING: iShares scrape failed: {e}")
+        print("Continuing with existing data...")
+    print()
+
+    # Step 1: Fetch and process each ticker
+    print("=== Fetching ETF data ===")
+    for ticker_config in ticker_configs:
+        symbol = ticker_config["symbol"]
+        data = fetch_etf_data(symbol)
         if data is None:
-            print(f"Skipping {ticker} -- no data available")
+            print(f"Skipping {symbol} -- no data available")
             continue
 
-        output_path = output_dir / f"{ticker}.json"
+        output_path = output_dir / f"{symbol}.json"
         with open(output_path, "w") as f:
             json.dump(data, f, indent=2)
 

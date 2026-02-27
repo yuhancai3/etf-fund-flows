@@ -1,20 +1,20 @@
 {
   "ticker": "EWY",
   "name": "iShares MSCI South Korea ETF",
-  "last_updated": "2026-02-27 15:21:04",
+  "last_updated": "2026-02-27 16:39:40",
   "metadata": {
     "aum": 12199924736,
     "nav": 147.89,
     "expense_ratio": null,
-    "shares_outstanding": 75600000,
+    "shares_outstanding": 116000000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 0.0,
-    "monthly": 0.0,
-    "three_month": 0.0,
-    "six_month": 0.0
+    "weekly": 6015155975.0,
+    "monthly": 6015155975.0,
+    "three_month": 6015155975.0,
+    "six_month": 6015155975.0
   },
   "holdings": [
     {
@@ -5563,24 +5563,24 @@
     {
       "date": "2026-02-25",
       "close": 148.89,
-      "shares": 75600000,
-      "daily_flow": 0.0,
-      "weekly_flow": 0.0,
-      "monthly_flow": 0.0,
-      "three_month_flow": 0.0,
-      "six_month_flow": 0.0,
-      "cumulative_flow": 0.0
+      "shares": 116000000,
+      "daily_flow": 6015155975.0,
+      "weekly_flow": 6015155975.0,
+      "monthly_flow": 6015155975.0,
+      "three_month_flow": 6015155975.0,
+      "six_month_flow": 6015155975.0,
+      "cumulative_flow": 6015155975.0
     },
     {
       "date": "2026-02-26",
       "close": 150.41,
-      "shares": 75600000,
+      "shares": 116000000,
       "daily_flow": 0.0,
-      "weekly_flow": 0.0,
-      "monthly_flow": 0.0,
-      "three_month_flow": 0.0,
-      "six_month_flow": 0.0,
-      "cumulative_flow": 0.0
+      "weekly_flow": 6015155975.0,
+      "monthly_flow": 6015155975.0,
+      "three_month_flow": 6015155975.0,
+      "six_month_flow": 6015155975.0,
+      "cumulative_flow": 6015155975.0
     }
   ]
 }
