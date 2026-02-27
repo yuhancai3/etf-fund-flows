@@ -76,9 +76,19 @@ export default function FlowsChart({ flows }: FlowsChartProps) {
   return (
     <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
-        <h3 className="text-xs font-mono uppercase tracking-wider text-[#ffab00]">
-          Fund Flows
-        </h3>
+        <div className="flex items-center gap-2">
+          <h3 className="text-xs font-mono uppercase tracking-wider text-[#ffab00]">
+            Fund Flows
+          </h3>
+          <div className="relative group">
+            <span className="text-[#555] hover:text-[#888] cursor-help text-xs">&#9432;</span>
+            <div className="absolute left-0 top-5 z-50 hidden group-hover:block w-72 p-3 bg-[#222] border border-[#333] rounded shadow-lg text-[11px] font-mono text-[#aaa] leading-relaxed">
+              <p className="text-[#ccc] font-bold mb-1">Methodology</p>
+              <p>Daily Flow = (Shares Today − Shares Yesterday) × NAV</p>
+              <p className="mt-1">Shares outstanding sourced daily from iShares.com (BlackRock). Days with no iShares data are skipped — no interpolation.</p>
+            </div>
+          </div>
+        </div>
         <div className="flex flex-wrap gap-2">
           {/* Flow type toggles */}
           <div className="flex gap-1">
