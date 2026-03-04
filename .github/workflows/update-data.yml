@@ -2,8 +2,9 @@ name: Update ETF Data
 
 on:
   schedule:
-    # Run daily at 12:00 UTC (7:00 AM ET) on weekdays
-    - cron: "0 12 * * 1-5"
+    # Run after US market close: 9:30 PM UTC (5:30 PM ET) on weekdays
+    # This ensures we capture the full trading day's data
+    - cron: "30 21 * * 1-5"
   workflow_dispatch: # Allow manual trigger
 
 permissions:
