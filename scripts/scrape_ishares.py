@@ -11,6 +11,7 @@ shares outstanding data.
 
 import csv
 import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -21,6 +22,10 @@ import requests
 ISHARES_CSV_URL = (
     "https://www.ishares.com/us/products/{product_id}/{name}"
     "/1467271812596.ajax?fileType=csv&fileName={symbol}_holdings&dataType=fund"
+)
+
+ISHARES_PAGE_URL = (
+    "https://www.ishares.com/us/products/{product_id}/{name}"
 )
 
 HEADERS = {
@@ -148,8 +153,48 @@ def fetch_ishares_shares(ticker_config: dict) -> tuple[str | None, int | None]:
     return date, shares
 
 
-def load_existing_history() -> dict[tuple[str, str], int]:
-    """Load existing shares history CSV into a dict keyed by (date, ticker)."""
+def fetch_nav_from_page(ticker_config: dict) -> float | None:
+    """Fetch NAV for a ticker from the iShares product page HTML.
+
+    Parses NAV from text like: "NAV as of Mar 03, 2026 $133.40"
+    Returns float or None on failure.
+    """
+    symbol = ticker_config["symbol"]
+    product_id = ticker_config.get("ishares_product_id")
+    name = ticker_config.get("ishares_name")
+
+    if not product_id or not name:
+        print(f"  {symbol}: No iShares config for NAV, skipping")
+        return None
+
+    url = ISHARES_PAGE_URL.format(product_id=product_id, name=name)
+
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"  {symbol}: iShares NAV request failed: {e}")
+        return None
+
+    match = re.search(r"NAV as of[^$]*\$([0-9,]+\.\d+)", resp.text)
+    if not match:
+        print(f"  {symbol}: Could not find NAV on iShares page")
+        return None
+
+    nav_str = match.group(1).replace(",", "")
+    try:
+        return float(nav_str)
+    except ValueError:
+        print(f"  {symbol}: Could not parse NAV value: {nav_str}")
+        return None
+
+
+def load_existing_history() -> dict[tuple[str, str], dict]:
+    """Load existing shares history CSV into a dict keyed by (date, ticker).
+
+    Each value is {"shares": int, "nav": float|None}.
+    Handles backward compatibility with old CSV format (no nav column).
+    """
     history = {}
     if not HISTORY_CSV.exists():
         return history
@@ -158,12 +203,17 @@ def load_existing_history() -> dict[tuple[str, str], int]:
         reader = csv.DictReader(f)
         for row in reader:
             key = (row["date"], row["ticker"])
-            history[key] = int(row["shares_outstanding"])
+            nav_str = row.get("nav", "")
+            nav = float(nav_str) if nav_str else None
+            history[key] = {"shares": int(row["shares_outstanding"]), "nav": nav}
     return history
 
 
-def save_history(history: dict[tuple[str, str], int]) -> None:
-    """Write the full shares history to CSV."""
+def save_history(history: dict[tuple[str, str], dict]) -> None:
+    """Write the full shares history to CSV.
+
+    Values can be dicts {"shares": int, "nav": float|None} (new format).
+    """
     HISTORY_CSV.parent.mkdir(parents=True, exist_ok=True)
 
     # Sort by date then ticker
@@ -171,15 +221,18 @@ def save_history(history: dict[tuple[str, str], int]) -> None:
 
     with open(HISTORY_CSV, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["date", "ticker", "shares_outstanding"])
-        for (date, ticker), shares in sorted_entries:
-            writer.writerow([date, ticker, shares])
+        writer.writerow(["date", "ticker", "shares_outstanding", "nav"])
+        for (date, ticker), value in sorted_entries:
+            shares = value["shares"]
+            nav = value["nav"]
+            nav_str = str(nav) if nav is not None else ""
+            writer.writerow([date, ticker, shares, nav_str])
 
 
-def scrape_all() -> dict[str, tuple[str, int]]:
-    """Scrape shares outstanding for all configured tickers.
+def scrape_all() -> dict[str, tuple[str, int, float | None]]:
+    """Scrape shares outstanding and NAV for all configured tickers.
 
-    Returns dict of {symbol: (date, shares)} for successfully scraped tickers.
+    Returns dict of {symbol: (date, shares, nav)} for successfully scraped tickers.
     """
     tickers = load_config()
     history = load_existing_history()
@@ -193,19 +246,26 @@ def scrape_all() -> dict[str, tuple[str, int]]:
         if date is None or shares is None:
             continue
 
+        # Fetch NAV from product page
+        nav = fetch_nav_from_page(ticker_config)
+        if nav is not None:
+            print(f"  {symbol}: NAV = ${nav:.2f}")
+
         key = (date, symbol)
+        new_value = {"shares": shares, "nav": nav}
         if key in history:
             existing = history[key]
-            if existing == shares:
+            if existing["shares"] == shares:
                 print(f"  {symbol}: Already have {date} = {shares:,} (unchanged)")
             else:
-                print(f"  {symbol}: Updating {date}: {existing:,} -> {shares:,}")
-                history[key] = shares
+                print(f"  {symbol}: Updating {date}: {existing['shares']:,} -> {shares:,}")
+            # Always update to capture latest NAV even if shares unchanged
+            history[key] = new_value
         else:
             print(f"  {symbol}: New entry {date} = {shares:,}")
-            history[key] = shares
+            history[key] = new_value
 
-        results[symbol] = (date, shares)
+        results[symbol] = (date, shares, nav)
 
     save_history(history)
     print(f"Shares history saved to {HISTORY_CSV} ({len(history)} entries)")
@@ -217,5 +277,6 @@ if __name__ == "__main__":
     if not results:
         print("WARNING: No shares data scraped from iShares")
         sys.exit(1)
-    for symbol, (date, shares) in results.items():
-        print(f"  {symbol}: {date} = {shares:,} shares outstanding")
+    for symbol, (date, shares, nav) in results.items():
+        nav_str = f", NAV=${nav:.2f}" if nav is not None else ""
+        print(f"  {symbol}: {date} = {shares:,} shares outstanding{nav_str}")

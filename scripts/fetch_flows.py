@@ -44,31 +44,34 @@ def load_config() -> list[dict]:
     return result
 
 
-def load_shares_history(ticker: str) -> pd.Series:
-    """Load accumulated shares history from CSV for a given ticker.
+def load_shares_history(ticker: str) -> tuple[pd.Series, pd.Series]:
+    """Load accumulated shares and NAV history from CSV for a given ticker.
 
-    Returns a Series indexed by DatetimeIndex with shares outstanding values.
+    Returns (shares_series, nav_series) both indexed by DatetimeIndex.
     """
     if not SHARES_HISTORY_CSV.exists():
-        return pd.Series(dtype=float)
+        return pd.Series(dtype=float), pd.Series(dtype=float)
 
     rows = []
     with open(SHARES_HISTORY_CSV, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row["ticker"] == ticker:
+                nav_val = row.get("nav", "")
                 rows.append({
                     "date": pd.Timestamp(row["date"]),
                     "shares": int(row["shares_outstanding"]),
+                    "nav": float(nav_val) if nav_val else None,
                 })
 
     if not rows:
-        return pd.Series(dtype=float)
+        return pd.Series(dtype=float), pd.Series(dtype=float)
 
     df = pd.DataFrame(rows)
-    series = pd.Series(df["shares"].values, index=pd.DatetimeIndex(df["date"]))
-    series.name = "shares_outstanding"
-    return series
+    idx = pd.DatetimeIndex(df["date"])
+    shares = pd.Series(df["shares"].values, index=idx, name="shares_outstanding")
+    nav = pd.Series(df["nav"].values, index=idx, name="nav")
+    return shares, nav
 
 
 def fetch_etf_data(ticker: str) -> dict:
@@ -79,7 +82,7 @@ def fetch_etf_data(ticker: str) -> dict:
     # 1. Get shares outstanding from iShares history (primary source)
     # We do NOT use yfinance shares data — it can be years stale and causes
     # artificial $B spikes when merged with fresh iShares scrapes.
-    shares = load_shares_history(ticker)
+    shares, nav_history = load_shares_history(ticker)
     if not shares.empty:
         print(f"  iShares shares: {len(shares)} data points")
     else:
@@ -100,12 +103,18 @@ def fetch_etf_data(ticker: str) -> dict:
     df = pd.DataFrame({"close": hist["Close"]})
     df["shares"] = shares
     df["shares"] = df["shares"].ffill()
+
+    # NAV: use iShares NAV where available, fall back to close price
+    df["nav"] = nav_history
+    df["nav"] = df["nav"].ffill()
+    df["nav"] = df["nav"].fillna(df["close"])
+
     df = df.dropna(subset=["shares"])
     df = df.sort_index()
 
-    # 4. Calculate daily fund flows
+    # 4. Calculate daily fund flows using NAV (industry standard)
     df["shares_change"] = df["shares"].diff()
-    df["daily_flow"] = df["shares_change"] * df["close"]
+    df["daily_flow"] = df["shares_change"] * df["nav"]
 
     # 5. Calculate rolling aggregates
     df["weekly_flow"] = df["daily_flow"].rolling(5, min_periods=1).sum()
@@ -163,13 +172,18 @@ def fetch_etf_data(ticker: str) -> dict:
     # Summary stats (latest values)
     latest = df.iloc[-1] if not df.empty else None
 
+    # Compute AUM from shares * NAV (more accurate than yfinance totalAssets)
+    computed_aum = None
+    if latest is not None and pd.notna(latest["nav"]):
+        computed_aum = int(latest["shares"]) * float(latest["nav"])
+
     output = {
         "ticker": ticker,
         "name": info.get("longName", info.get("shortName", ticker)),
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "metadata": {
-            "aum": info.get("totalAssets", None),
-            "nav": round(float(info.get("navPrice", info.get("previousClose", 0))), 2),
+            "aum": int(computed_aum) if computed_aum else info.get("totalAssets", None),
+            "nav": round(float(latest["nav"]), 2) if latest is not None and pd.notna(latest["nav"]) else round(float(info.get("navPrice", info.get("previousClose", 0))), 2),
             "expense_ratio": info.get("annualReportExpenseRatio", None),
             "shares_outstanding": int(latest["shares"]) if latest is not None else None,
             "currency": info.get("currency", "USD"),

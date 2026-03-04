@@ -93,7 +93,7 @@ def backfill_ticker(ticker_config: dict, start: str, end: str, history: dict, de
             time.sleep(delay)
             continue
 
-        history[(returned_date, symbol)] = shares
+        history[(returned_date, symbol)] = {"shares": shares, "nav": None}
         added += 1
 
         # Progress update every 20 new entries
