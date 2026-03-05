@@ -1889,24 +1889,24 @@
     {
       "date": "2026-02-26",
       "close": 150.41,
-      "shares": 116000000,
-      "daily_flow": 0.0,
-      "weekly_flow": 1371786520.0,
-      "monthly_flow": 2573884523.0,
-      "three_month_flow": 4792541658.0,
-      "six_month_flow": 5119490760.0,
-      "cumulative_flow": 5463081587.0
+      "shares": 118750000,
+      "daily_flow": 413627510.0,
+      "weekly_flow": 1785414030.0,
+      "monthly_flow": 2987512033.0,
+      "three_month_flow": 5206169168.0,
+      "six_month_flow": 5533118270.0,
+      "cumulative_flow": 5876709097.0
     },
     {
       "date": "2026-02-27",
       "close": 151.37,
       "shares": 118850000,
-      "daily_flow": 431404486.0,
-      "weekly_flow": 1803191006.0,
-      "monthly_flow": 3005289009.0,
-      "three_month_flow": 5144910321.0,
-      "six_month_flow": 5692651350.0,
-      "cumulative_flow": 5894486073.0
+      "daily_flow": 15137000.0,
+      "weekly_flow": 1800551029.0,
+      "monthly_flow": 3002649033.0,
+      "three_month_flow": 5142270345.0,
+      "six_month_flow": 5690011374.0,
+      "cumulative_flow": 5891846097.0
     },
     {
       "date": "2026-03-02",
