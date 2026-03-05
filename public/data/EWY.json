@@ -1,85 +1,85 @@
 {
   "ticker": "EWY",
   "name": "iShares MSCI South Korea ETF",
-  "last_updated": "2026-03-05 15:13:14",
+  "last_updated": "2026-03-05 21:58:36",
   "metadata": {
-    "aum": 14958960000,
+    "aum": 15028040000,
     "nav": 125.6,
     "expense_ratio": null,
-    "shares_outstanding": 119100000,
+    "shares_outstanding": 119650000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 468289484.0,
-    "monthly": 2839400506.0,
-    "three_month": 5101808843.0,
-    "six_month": 5782526173.0
+    "weekly": 537369484.0,
+    "monthly": 2908480506.0,
+    "three_month": 5170888843.0,
+    "six_month": 5851606173.0
   },
   "holdings": [
     {
       "name": "Samsung Electronics Co Ltd",
       "symbol": "005930.KS",
-      "weight": 26.43
+      "weight": 23.44
     },
     {
       "name": "SK Hynix Inc",
       "symbol": "000660.KS",
-      "weight": 20.6
+      "weight": 19.76
     },
     {
       "name": "Hyundai Motor Co",
       "symbol": "005380.KS",
-      "weight": 2.89
+      "weight": 3.22
     },
     {
       "name": "SK Square",
       "symbol": "402340.KS",
-      "weight": 2.4
+      "weight": 2.25
     },
     {
       "name": "KB Financial Group Inc",
       "symbol": "105560.KS",
-      "weight": 2.14
-    },
-    {
-      "name": "Hanwha Aerospace Co Ltd",
-      "symbol": "012450.KS",
-      "weight": 1.91
-    },
-    {
-      "name": "Doosan Enerbility Co Ltd",
-      "symbol": "034020.KS",
-      "weight": 1.77
-    },
-    {
-      "name": "NAVER Corp",
-      "symbol": "035420.KS",
-      "weight": 1.66
+      "weight": 2.08
     },
     {
       "name": "Kia Corp",
       "symbol": "000270.KS",
-      "weight": 1.55
+      "weight": 1.74
+    },
+    {
+      "name": "Doosan Enerbility Co Ltd",
+      "symbol": "034020.KS",
+      "weight": 1.72
     },
     {
       "name": "Shinhan Financial Group Co Ltd",
       "symbol": "055550.KS",
-      "weight": 1.54
+      "weight": 1.51
+    },
+    {
+      "name": "Hanwha Aerospace Co Ltd",
+      "symbol": "012450.KS",
+      "weight": 1.46
+    },
+    {
+      "name": "Celltrion Inc",
+      "symbol": "068270.KS",
+      "weight": 1.37
     }
   ],
   "sectors": {
     "realestate": 0.0,
-    "consumer_cyclical": 7.06,
-    "basic_materials": 1.74,
-    "consumer_defensive": 1.51,
-    "technology": 52.61,
-    "communication_services": 3.76,
-    "financial_services": 9.76,
-    "utilities": 0.69,
-    "industrials": 17.94,
-    "energy": 1.12,
-    "healthcare": 3.81
+    "consumer_cyclical": 7.77,
+    "basic_materials": 2.01,
+    "consumer_defensive": 1.53,
+    "technology": 49.69,
+    "communication_services": 3.51,
+    "financial_services": 10.39,
+    "utilities": 0.63,
+    "industrials": 19.0,
+    "energy": 1.32,
+    "healthcare": 4.14
   },
   "flows": [
     {
@@ -1933,13 +1933,24 @@
     {
       "date": "2026-03-04",
       "close": 134.37,
-      "shares": 119100000,
+      "shares": 119650000,
+      "daily_flow": 69080000.0,
+      "weekly_flow": 537369484.0,
+      "monthly_flow": 2908480506.0,
+      "three_month_flow": 5170888843.0,
+      "six_month_flow": 5851606173.0,
+      "cumulative_flow": 6000451072.0
+    },
+    {
+      "date": "2026-03-05",
+      "close": 125.74,
+      "shares": 119650000,
       "daily_flow": 0.0,
-      "weekly_flow": 468289484.0,
-      "monthly_flow": 2839400506.0,
-      "three_month_flow": 5101808843.0,
-      "six_month_flow": 5782526173.0,
-      "cumulative_flow": 5931371072.0
+      "weekly_flow": 537369484.0,
+      "monthly_flow": 2908480506.0,
+      "three_month_flow": 5170888843.0,
+      "six_month_flow": 5851606173.0,
+      "cumulative_flow": 6000451072.0
     }
   ]
 }
