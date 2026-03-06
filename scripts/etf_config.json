@@ -4,6 +4,16 @@
       "symbol": "EWY",
       "ishares_product_id": "239681",
       "ishares_name": "ishares-msci-south-korea-capped-etf"
+    },
+    {
+      "symbol": "EWZ",
+      "ishares_product_id": "239612",
+      "ishares_name": "ishares-msci-brazil-etf"
+    },
+    {
+      "symbol": "EWJ",
+      "ishares_product_id": "239665",
+      "ishares_name": "ishares-msci-japan-etf"
     }
   ]
 }

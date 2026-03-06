@@ -12,6 +12,36 @@ import TopHoldings from "@/components/TopHoldings";
 import SectorAllocation from "@/components/SectorAllocation";
 import ETFSelector from "@/components/ETFSelector";
 
+function FreshnessBadge({ lastUpdated }: { lastUpdated: string }) {
+  const updated = new Date(lastUpdated);
+  const now = new Date();
+  const hoursAgo = (now.getTime() - updated.getTime()) / (1000 * 60 * 60);
+
+  // Data pipeline runs at 5:30 PM ET (21:30 UTC) on weekdays
+  const isToday = updated.toDateString() === now.toDateString();
+  const isWeekend = now.getDay() === 0 || now.getDay() === 6;
+
+  let label: string;
+  let color: string;
+
+  if (isToday || (isWeekend && hoursAgo < 72)) {
+    label = "FRESH";
+    color = "text-[#00c853]";
+  } else if (hoursAgo < 48) {
+    label = "1 DAY OLD";
+    color = "text-[#ffab00]";
+  } else {
+    label = "STALE";
+    color = "text-[#ff1744]";
+  }
+
+  return (
+    <span className={`${color} text-[10px] font-bold tracking-wider`}>
+      {label}
+    </span>
+  );
+}
+
 export default function Home() {
   const [data, setData] = useState<ETFData | null>(null);
   const [ticker, setTicker] = useState("EWY");
@@ -85,9 +115,10 @@ export default function Home() {
             selected={ticker}
             onChange={setTicker}
           />
-          <div className="text-right text-xs text-[#888888] font-mono">
-            <div>Last updated</div>
-            <div>{data.last_updated}</div>
+          <div className="text-right text-xs font-mono">
+            <div className="text-[#888888]">Last updated</div>
+            <div className="text-[#888888]">{data.last_updated}</div>
+            <FreshnessBadge lastUpdated={data.last_updated} />
           </div>
         </div>
       </div>

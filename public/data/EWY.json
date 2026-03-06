@@ -1,20 +1,20 @@
 {
   "ticker": "EWY",
   "name": "iShares MSCI South Korea ETF",
-  "last_updated": "2026-03-05 21:58:36",
+  "last_updated": "2026-03-06 15:55:41",
   "metadata": {
-    "aum": 15028040000,
-    "nav": 125.6,
+    "aum": 15694490499,
+    "nav": 131.17,
     "expense_ratio": null,
     "shares_outstanding": 119650000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 537369484.0,
-    "monthly": 2908480506.0,
-    "three_month": 5170888843.0,
-    "six_month": 5851606173.0
+    "weekly": 124165498.0,
+    "monthly": 2908904029.0,
+    "three_month": 5171312366.0,
+    "six_month": 5852029696.0
   },
   "holdings": [
     {
@@ -1889,68 +1889,68 @@
     {
       "date": "2026-02-26",
       "close": 150.41,
-      "shares": 116000000,
-      "daily_flow": 0.0,
-      "weekly_flow": 1371786520.0,
-      "monthly_flow": 2573884523.0,
-      "three_month_flow": 4792541658.0,
-      "six_month_flow": 5119490760.0,
-      "cumulative_flow": 5463081587.0
+      "shares": 118750000,
+      "daily_flow": 413627510.0,
+      "weekly_flow": 1785414030.0,
+      "monthly_flow": 2987512033.0,
+      "three_month_flow": 5206169168.0,
+      "six_month_flow": 5533118270.0,
+      "cumulative_flow": 5876709097.0
     },
     {
       "date": "2026-02-27",
       "close": 151.37,
       "shares": 118850000,
-      "daily_flow": 431404486.0,
-      "weekly_flow": 1803191006.0,
-      "monthly_flow": 3005289009.0,
-      "three_month_flow": 5144910321.0,
-      "six_month_flow": 5692651350.0,
-      "cumulative_flow": 5894486073.0
+      "daily_flow": 15137000.0,
+      "weekly_flow": 1800551029.0,
+      "monthly_flow": 3002649033.0,
+      "three_month_flow": 5142270345.0,
+      "six_month_flow": 5690011374.0,
+      "cumulative_flow": 5891846097.0
     },
     {
       "date": "2026-03-02",
       "close": 147.54,
       "shares": 119100000,
       "daily_flow": 36884998.0,
-      "weekly_flow": 1310735992.0,
-      "monthly_flow": 2955024008.0,
-      "three_month_flow": 5181795320.0,
-      "six_month_flow": 5729536348.0,
-      "cumulative_flow": 5931371072.0
+      "weekly_flow": 1308096016.0,
+      "monthly_flow": 2952384031.0,
+      "three_month_flow": 5179155343.0,
+      "six_month_flow": 5726896372.0,
+      "cumulative_flow": 5928731095.0
     },
     {
       "date": "2026-03-03",
       "close": 132.34,
       "shares": 119100000,
       "daily_flow": 0.0,
-      "weekly_flow": 855403483.0,
-      "monthly_flow": 2893819006.0,
-      "three_month_flow": 5101808843.0,
-      "six_month_flow": 5782526173.0,
-      "cumulative_flow": 5931371072.0
+      "weekly_flow": 852763506.0,
+      "monthly_flow": 2891179029.0,
+      "three_month_flow": 5099168866.0,
+      "six_month_flow": 5779886196.0,
+      "cumulative_flow": 5928731095.0
     },
     {
       "date": "2026-03-04",
       "close": 134.37,
       "shares": 119650000,
-      "daily_flow": 69080000.0,
-      "weekly_flow": 537369484.0,
-      "monthly_flow": 2908480506.0,
-      "three_month_flow": 5170888843.0,
-      "six_month_flow": 5851606173.0,
-      "cumulative_flow": 6000451072.0
+      "daily_flow": 72143500.0,
+      "weekly_flow": 537793008.0,
+      "monthly_flow": 2908904029.0,
+      "three_month_flow": 5171312366.0,
+      "six_month_flow": 5852029696.0,
+      "cumulative_flow": 6000874595.0
     },
     {
       "date": "2026-03-05",
       "close": 125.74,
       "shares": 119650000,
       "daily_flow": 0.0,
-      "weekly_flow": 537369484.0,
-      "monthly_flow": 2908480506.0,
-      "three_month_flow": 5170888843.0,
-      "six_month_flow": 5851606173.0,
-      "cumulative_flow": 6000451072.0
+      "weekly_flow": 124165498.0,
+      "monthly_flow": 2908904029.0,
+      "three_month_flow": 5171312366.0,
+      "six_month_flow": 5852029696.0,
+      "cumulative_flow": 6000874595.0
     }
   ]
 }

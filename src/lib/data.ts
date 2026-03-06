@@ -7,7 +7,7 @@ export async function loadETFData(ticker: string): Promise<ETFData> {
 }
 
 export async function getAvailableETFs(): Promise<string[]> {
-  return ["EWY"];
+  return ["EWY", "EWZ", "EWJ"];
 }
 
 export function formatCurrency(value: number, compact = false): string {
