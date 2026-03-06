@@ -5,6 +5,7 @@ import { ETFData } from "@/lib/types";
 import { loadETFData, getAvailableETFs } from "@/lib/data";
 import StatsBar from "@/components/StatsBar";
 import FlowsSummary from "@/components/FlowsSummary";
+import FlowAlerts from "@/components/FlowAlerts";
 import FlowsChart, { type TimeRange } from "@/components/FlowsChart";
 import PriceChart from "@/components/PriceChart";
 import TopHoldings from "@/components/TopHoldings";
@@ -39,15 +40,37 @@ export default function Home() {
 
   if (!data)
     return (
-      <main className="p-6">
-        <p className="text-[#888888] font-mono">Loading...</p>
+      <main className="max-w-7xl mx-auto p-4 md:p-6 space-y-4">
+        {/* Skeleton header */}
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="h-7 w-48 bg-[#1a1a1a] rounded animate-pulse" />
+            <div className="h-4 w-64 bg-[#1a1a1a] rounded animate-pulse mt-2" />
+          </div>
+          <div className="h-8 w-24 bg-[#1a1a1a] rounded animate-pulse" />
+        </div>
+        {/* Skeleton stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] rounded px-4 py-3 h-[72px] animate-pulse" />
+          ))}
+        </div>
+        {/* Skeleton chart */}
+        <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4 h-[420px] animate-pulse" />
+        <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4 h-[320px] animate-pulse" />
+        {/* Skeleton bottom grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4 h-[280px] animate-pulse" />
+          ))}
+        </div>
       </main>
     );
 
   return (
     <main className="max-w-7xl mx-auto p-4 md:p-6 space-y-4">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h1 className="text-xl md:text-2xl font-mono font-bold text-[#ffab00]">
             ETF FUND FLOWS
@@ -70,17 +93,20 @@ export default function Home() {
       </div>
 
       {/* Stats */}
-      <StatsBar metadata={data.metadata} />
+      <StatsBar metadata={data.metadata} flows={data.flows} />
+
+      {/* Unusual Activity Alerts */}
+      <FlowAlerts flows={data.flows} aum={data.metadata.aum} />
 
       {/* Flows Chart */}
-      <FlowsChart flows={data.flows} timeRange={timeRange} onTimeRangeChange={setTimeRange} />
+      <FlowsChart flows={data.flows} timeRange={timeRange} onTimeRangeChange={setTimeRange} aum={data.metadata.aum} />
 
-      {/* Price Chart */}
+      {/* Price vs Flows Divergence */}
       <PriceChart flows={data.flows} timeRange={timeRange} />
 
       {/* Bottom grid: Summary + Holdings + Sectors */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <FlowsSummary summary={data.summary} />
+        <FlowsSummary summary={data.summary} aum={data.metadata.aum} />
         <TopHoldings holdings={data.holdings} />
         <SectorAllocation sectors={data.sectors} />
       </div>

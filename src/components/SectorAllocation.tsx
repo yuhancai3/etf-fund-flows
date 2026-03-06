@@ -64,6 +64,27 @@ export default function SectorAllocation({ sectors }: SectorAllocationProps) {
             dataKey="value"
             stroke="#0a0a0a"
             strokeWidth={2}
+            label={({ value, cx, cy, midAngle, outerRadius: or, index }: { value?: number; cx?: number; cy?: number; midAngle?: number; outerRadius?: number; index?: number }) => {
+              if ((index ?? 0) >= 4) return null;
+              const RADIAN = Math.PI / 180;
+              const radius = (or ?? 75) + 14;
+              const x = (cx ?? 0) + radius * Math.cos(-(midAngle ?? 0) * RADIAN);
+              const y = (cy ?? 0) + radius * Math.sin(-(midAngle ?? 0) * RADIAN);
+              return (
+                <text
+                  x={x}
+                  y={y}
+                  fill="#888"
+                  textAnchor={x > (cx ?? 0) ? "start" : "end"}
+                  dominantBaseline="central"
+                  fontSize={10}
+                  fontFamily="monospace"
+                >
+                  {value}%
+                </text>
+              );
+            }}
+            labelLine={false}
           >
             {data.map((_, index) => (
               <Cell

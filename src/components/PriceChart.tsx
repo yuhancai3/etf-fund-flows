@@ -2,8 +2,9 @@
 
 import { useMemo } from "react";
 import {
-  AreaChart,
+  ComposedChart,
   Area,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -11,6 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ETFFlow } from "@/lib/types";
+import { formatCurrency } from "@/lib/data";
 import { type TimeRange } from "@/components/FlowsChart";
 
 const TIME_RANGE_MONTHS: Record<TimeRange, number | null> = {
@@ -25,10 +27,21 @@ interface PriceChartProps {
 export default function PriceChart({ flows, timeRange }: PriceChartProps) {
   const data = useMemo(() => {
     const months = TIME_RANGE_MONTHS[timeRange];
-    if (months === null) return flows;
-    const cutoff = new Date();
-    cutoff.setMonth(cutoff.getMonth() - months);
-    return flows.filter((f) => new Date(f.date) >= cutoff);
+    const filtered = months === null
+      ? flows
+      : (() => {
+          const cutoff = new Date();
+          cutoff.setMonth(cutoff.getMonth() - months);
+          return flows.filter((f) => new Date(f.date) >= cutoff);
+        })();
+    if (filtered.length === 0) return [];
+
+    // Rebase cumulative flow to 0 for the visible window
+    const baselineCumulative = filtered[0].cumulative_flow;
+    return filtered.map((f) => ({
+      ...f,
+      cumulative_flow: f.cumulative_flow - baselineCumulative,
+    }));
   }, [flows, timeRange]);
 
   const formatXAxis = (dateStr: string) => {
@@ -48,11 +61,11 @@ export default function PriceChart({ flows, timeRange }: PriceChartProps) {
   return (
     <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4">
       <h3 className="text-xs font-mono uppercase tracking-wider text-[#ffab00] mb-4">
-        Price Performance ({timeRange})
+        Price vs Flows ({timeRange})
       </h3>
 
-      <ResponsiveContainer width="100%" height={250}>
-        <AreaChart data={data}>
+      <ResponsiveContainer width="100%" height={280}>
+        <ComposedChart data={data}>
           <defs>
             <linearGradient id="priceGradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#ffab00" stopOpacity={0.3} />
@@ -68,11 +81,20 @@ export default function PriceChart({ flows, timeRange }: PriceChartProps) {
             interval="preserveStartEnd"
           />
           <YAxis
+            yAxisId="price"
             domain={[minPrice, maxPrice]}
             stroke="#888888"
             tick={{ fontSize: 11, fontFamily: "monospace" }}
             tickFormatter={(v: number) => `$${v}`}
             width={60}
+          />
+          <YAxis
+            yAxisId="flow"
+            orientation="right"
+            stroke="#888888"
+            tick={{ fontSize: 11, fontFamily: "monospace" }}
+            tickFormatter={(v: number) => formatCurrency(v, true)}
+            width={70}
           />
           <Tooltip
             contentStyle={{
@@ -84,7 +106,10 @@ export default function PriceChart({ flows, timeRange }: PriceChartProps) {
             }}
             labelStyle={{ color: "#888888" }}
             itemStyle={{ color: "#e0e0e0" }}
-            formatter={(value?: number) => [`$${(value ?? 0).toFixed(2)}`, "Close"]}
+            formatter={(value?: number, name?: string) => {
+              if (name === "close") return [`$${(value ?? 0).toFixed(2)}`, "Price"];
+              return [formatCurrency(value ?? 0, true), "Cumulative Flow"];
+            }}
             labelFormatter={(label) => {
               const d = new Date(String(label));
               return d.toLocaleDateString("en-US", {
@@ -95,14 +120,37 @@ export default function PriceChart({ flows, timeRange }: PriceChartProps) {
             }}
           />
           <Area
+            yAxisId="price"
             type="monotone"
             dataKey="close"
+            name="close"
             stroke="#ffab00"
             fill="url(#priceGradient)"
             strokeWidth={2}
           />
-        </AreaChart>
+          <Line
+            yAxisId="flow"
+            type="monotone"
+            dataKey="cumulative_flow"
+            name="cumulative_flow"
+            stroke="#00c853"
+            dot={false}
+            strokeWidth={2}
+          />
+        </ComposedChart>
       </ResponsiveContainer>
+
+      {/* Legend */}
+      <div className="flex items-center gap-6 mt-3 text-xs font-mono text-[#888]">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-0.5 bg-[#ffab00]" />
+          <span>Price</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-0.5 bg-[#00c853]" />
+          <span>Cumulative Flow</span>
+        </div>
+      </div>
     </div>
   );
 }
