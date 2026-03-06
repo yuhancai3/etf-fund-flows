@@ -11,18 +11,25 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ETFFlow } from "@/lib/types";
+import { type TimeRange } from "@/components/FlowsChart";
+
+const TIME_RANGE_MONTHS: Record<TimeRange, number | null> = {
+  "1M": 1, "3M": 3, "6M": 6, "1Y": 12, ALL: null,
+};
 
 interface PriceChartProps {
   flows: ETFFlow[];
+  timeRange: TimeRange;
 }
 
-export default function PriceChart({ flows }: PriceChartProps) {
+export default function PriceChart({ flows, timeRange }: PriceChartProps) {
   const data = useMemo(() => {
-    // Show last 6 months of data
+    const months = TIME_RANGE_MONTHS[timeRange];
+    if (months === null) return flows;
     const cutoff = new Date();
-    cutoff.setMonth(cutoff.getMonth() - 6);
+    cutoff.setMonth(cutoff.getMonth() - months);
     return flows.filter((f) => new Date(f.date) >= cutoff);
-  }, [flows]);
+  }, [flows, timeRange]);
 
   const formatXAxis = (dateStr: string) => {
     const d = new Date(dateStr);
@@ -41,7 +48,7 @@ export default function PriceChart({ flows }: PriceChartProps) {
   return (
     <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-4">
       <h3 className="text-xs font-mono uppercase tracking-wider text-[#ffab00] mb-4">
-        Price Performance (6M)
+        Price Performance ({timeRange})
       </h3>
 
       <ResponsiveContainer width="100%" height={250}>

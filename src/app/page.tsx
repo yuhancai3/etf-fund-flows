@@ -5,7 +5,7 @@ import { ETFData } from "@/lib/types";
 import { loadETFData, getAvailableETFs } from "@/lib/data";
 import StatsBar from "@/components/StatsBar";
 import FlowsSummary from "@/components/FlowsSummary";
-import FlowsChart from "@/components/FlowsChart";
+import FlowsChart, { type TimeRange } from "@/components/FlowsChart";
 import PriceChart from "@/components/PriceChart";
 import TopHoldings from "@/components/TopHoldings";
 import SectorAllocation from "@/components/SectorAllocation";
@@ -16,6 +16,7 @@ export default function Home() {
   const [ticker, setTicker] = useState("EWY");
   const [tickers, setTickers] = useState<string[]>(["EWY"]);
   const [error, setError] = useState<string | null>(null);
+  const [timeRange, setTimeRange] = useState<TimeRange>("6M");
 
   useEffect(() => {
     getAvailableETFs().then(setTickers);
@@ -72,10 +73,10 @@ export default function Home() {
       <StatsBar metadata={data.metadata} />
 
       {/* Flows Chart */}
-      <FlowsChart flows={data.flows} />
+      <FlowsChart flows={data.flows} timeRange={timeRange} onTimeRangeChange={setTimeRange} />
 
       {/* Price Chart */}
-      <PriceChart flows={data.flows} />
+      <PriceChart flows={data.flows} timeRange={timeRange} />
 
       {/* Bottom grid: Summary + Holdings + Sectors */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

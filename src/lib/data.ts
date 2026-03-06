@@ -13,10 +13,11 @@ export async function getAvailableETFs(): Promise<string[]> {
 export function formatCurrency(value: number, compact = false): string {
   if (compact) {
     const abs = Math.abs(value);
-    if (abs >= 1e9) return `$${(value / 1e9).toFixed(1)}B`;
-    if (abs >= 1e6) return `$${(value / 1e6).toFixed(1)}M`;
-    if (abs >= 1e3) return `$${(value / 1e3).toFixed(0)}K`;
-    return `$${value.toFixed(0)}`;
+    const sign = value < 0 ? "-" : "";
+    if (abs >= 1e9) return `${sign}$${(abs / 1e9).toFixed(1)}B`;
+    if (abs >= 1e6) return `${sign}$${(abs / 1e6).toFixed(1)}M`;
+    if (abs >= 1e3) return `${sign}$${(abs / 1e3).toFixed(0)}K`;
+    return `${sign}$${abs.toFixed(0)}`;
   }
   return new Intl.NumberFormat("en-US", {
     style: "currency",

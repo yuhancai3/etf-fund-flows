@@ -15,12 +15,14 @@ import {
 import { ETFFlow } from "@/lib/types";
 import { formatCurrency } from "@/lib/data";
 
+export type TimeRange = "1M" | "3M" | "6M" | "1Y" | "ALL";
+type FlowType = "daily" | "weekly" | "monthly" | "three_month" | "six_month";
+
 interface FlowsChartProps {
   flows: ETFFlow[];
+  timeRange: TimeRange;
+  onTimeRangeChange: (range: TimeRange) => void;
 }
-
-type TimeRange = "1M" | "3M" | "6M" | "1Y" | "ALL";
-type FlowType = "daily" | "weekly" | "monthly" | "three_month" | "six_month";
 
 const TIME_RANGES: { label: string; value: TimeRange }[] = [
   { label: "1M", value: "1M" },
@@ -54,16 +56,24 @@ function getDateCutoff(range: TimeRange): Date | null {
   }
 }
 
-export default function FlowsChart({ flows }: FlowsChartProps) {
-  const [timeRange, setTimeRange] = useState<TimeRange>("6M");
+export default function FlowsChart({ flows, timeRange, onTimeRangeChange }: FlowsChartProps) {
   const [flowType, setFlowType] = useState<FlowType>("daily");
 
-  const flowField = FLOW_TYPES.find((f) => f.value === flowType)!.field;
+  const flowConfig = FLOW_TYPES.find((f) => f.value === flowType)!;
+  const flowField = flowConfig.field;
+  const flowLabel = flowConfig.label + " Flow";
 
   const filteredData = useMemo(() => {
     const cutoff = getDateCutoff(timeRange);
-    if (!cutoff) return flows;
-    return flows.filter((f) => new Date(f.date) >= cutoff);
+    const sliced = cutoff ? flows.filter((f) => new Date(f.date) >= cutoff) : flows;
+
+    // Normalize cumulative_flow to start at 0 for the visible window
+    if (sliced.length === 0) return sliced;
+    const baselineCumulative = sliced[0].cumulative_flow;
+    return sliced.map((f) => ({
+      ...f,
+      cumulative_flow: f.cumulative_flow - baselineCumulative,
+    }));
   }, [flows, timeRange]);
 
   const formatXAxis = (dateStr: string) => {
@@ -111,7 +121,7 @@ export default function FlowsChart({ flows }: FlowsChartProps) {
             {TIME_RANGES.map((tr) => (
               <button
                 key={tr.value}
-                onClick={() => setTimeRange(tr.value)}
+                onClick={() => onTimeRangeChange(tr.value)}
                 className={`px-2 py-1 text-xs font-mono rounded transition-colors ${
                   timeRange === tr.value
                     ? "bg-[#ffab00] text-[#0a0a0a] font-bold"
@@ -126,7 +136,7 @@ export default function FlowsChart({ flows }: FlowsChartProps) {
       </div>
 
       <ResponsiveContainer width="100%" height={350}>
-        <ComposedChart data={filteredData}>
+        <ComposedChart key={`${timeRange}-${flowType}`} data={filteredData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#2a2a2a" />
           <XAxis
             dataKey="date"
@@ -162,7 +172,7 @@ export default function FlowsChart({ flows }: FlowsChartProps) {
             itemStyle={{ color: "#e0e0e0" }}
             formatter={(value?: number, name?: string) => [
               formatCurrency(value ?? 0, true),
-              name === "cumulative_flow" ? "Cumulative" : "Flow",
+              name === "cumulative_flow" ? "Cumulative" : flowLabel,
             ]}
             labelFormatter={(label) => {
               const d = new Date(String(label));

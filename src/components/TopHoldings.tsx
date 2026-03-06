@@ -26,7 +26,7 @@ export default function TopHoldings({ holdings }: TopHoldingsProps) {
       <div className="space-y-1">
         {top10.map((holding, index) => (
           <div
-            key={holding.symbol}
+            key={`${holding.symbol}-${index}`}
             className="flex items-center justify-between py-1.5 border-b border-[#2a2a2a] last:border-b-0"
           >
             <div className="flex items-center gap-2 min-w-0">
