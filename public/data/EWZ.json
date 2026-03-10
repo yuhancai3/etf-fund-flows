@@ -1,20 +1,20 @@
 {
   "ticker": "EWZ",
   "name": "iShares MSCI Brazil ETF",
-  "last_updated": "2026-03-09 21:55:16",
+  "last_updated": "2026-03-10 21:51:16",
   "metadata": {
-    "aum": 9192636000,
-    "nav": 36.22,
+    "aum": 9422746000,
+    "nav": 37.01,
     "expense_ratio": null,
-    "shares_outstanding": 253800000,
+    "shares_outstanding": 254600000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 116288000.0,
-    "monthly": 505890499.0,
-    "three_month": 2022052547.0,
-    "six_month": 2370982892.0
+    "weekly": 145896000.0,
+    "monthly": 535498499.0,
+    "three_month": 2051660547.0,
+    "six_month": 2400590892.0
   },
   "holdings": [
     {
@@ -1966,13 +1966,24 @@
     {
       "date": "2026-03-09",
       "close": 37.1,
-      "shares": 253800000,
+      "shares": 254600000,
+      "daily_flow": 29608000.0,
+      "weekly_flow": 145896000.0,
+      "monthly_flow": 535498499.0,
+      "three_month_flow": 2051660547.0,
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
+    },
+    {
+      "date": "2026-03-10",
+      "close": 37.53,
+      "shares": 254600000,
       "daily_flow": 0.0,
-      "weekly_flow": 116288000.0,
-      "monthly_flow": 505890499.0,
-      "three_month_flow": 2022052547.0,
-      "six_month_flow": 2370982892.0,
-      "cumulative_flow": 2532796378.0
+      "weekly_flow": 145896000.0,
+      "monthly_flow": 535498499.0,
+      "three_month_flow": 2051660547.0,
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     }
   ]
 }
