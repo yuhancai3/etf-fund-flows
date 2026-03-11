@@ -1,20 +1,20 @@
 {
   "ticker": "EWJ",
   "name": "iShares MSCI Japan ETF",
-  "last_updated": "2026-03-10 21:51:16",
+  "last_updated": "2026-03-11 21:56:01",
   "metadata": {
-    "aum": 19298274000,
-    "nav": 86.23,
+    "aum": 19429809000,
+    "nav": 86.47,
     "expense_ratio": null,
-    "shares_outstanding": 223800000,
+    "shares_outstanding": 224700000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 364152000.0,
-    "monthly": 2351923487.0,
-    "three_month": 3057220201.0,
-    "six_month": 2609611589.0
+    "weekly": 159462000.0,
+    "monthly": 2429746487.0,
+    "three_month": 3135043201.0,
+    "six_month": 2687434589.0
   },
   "holdings": [
     {
@@ -1977,13 +1977,24 @@
     {
       "date": "2026-03-10",
       "close": 86.46,
-      "shares": 223800000,
+      "shares": 224700000,
+      "daily_flow": 77823000.0,
+      "weekly_flow": 441975000.0,
+      "monthly_flow": 2429746487.0,
+      "three_month_flow": 3135043201.0,
+      "six_month_flow": 2687434589.0,
+      "cumulative_flow": 2017511695.0
+    },
+    {
+      "date": "2026-03-11",
+      "close": 85.73,
+      "shares": 224700000,
       "daily_flow": 0.0,
-      "weekly_flow": 364152000.0,
-      "monthly_flow": 2351923487.0,
-      "three_month_flow": 3057220201.0,
-      "six_month_flow": 2609611589.0,
-      "cumulative_flow": 1939688695.0
+      "weekly_flow": 159462000.0,
+      "monthly_flow": 2429746487.0,
+      "three_month_flow": 3135043201.0,
+      "six_month_flow": 2687434589.0,
+      "cumulative_flow": 2017511695.0
     }
   ]
 }
