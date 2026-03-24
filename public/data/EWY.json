@@ -1,10 +1,10 @@
 {
   "ticker": "EWY",
   "name": "iShares MSCI South Korea ETF",
-  "last_updated": "2026-03-23 21:57:19",
+  "last_updated": "2026-03-24 22:01:22",
   "metadata": {
-    "aum": 16780518000,
-    "nav": 127.56,
+    "aum": 17075190000,
+    "nav": 129.8,
     "expense_ratio": null,
     "shares_outstanding": 131550000,
     "currency": "USD"
@@ -12,7 +12,7 @@
   "summary": {
     "daily": 0.0,
     "weekly": -93366000.0,
-    "monthly": 3449072528.0,
+    "monthly": 2919732516.0,
     "three_month": 6275570030.0,
     "six_month": 7391522696.0
   },
@@ -2080,6 +2080,17 @@
       "daily_flow": 0.0,
       "weekly_flow": -93366000.0,
       "monthly_flow": 3449072528.0,
+      "three_month_flow": 6275570030.0,
+      "six_month_flow": 7391522696.0,
+      "cumulative_flow": 7540367595.0
+    },
+    {
+      "date": "2026-03-24",
+      "close": 128.75,
+      "shares": 131550000,
+      "daily_flow": 0.0,
+      "weekly_flow": -93366000.0,
+      "monthly_flow": 2919732516.0,
       "three_month_flow": 6275570030.0,
       "six_month_flow": 7391522696.0,
       "cumulative_flow": 7540367595.0
