@@ -1,10 +1,10 @@
 {
   "ticker": "EWZ",
   "name": "iShares MSCI Brazil ETF",
-  "last_updated": "2026-04-02 22:01:52",
+  "last_updated": "2026-04-03 21:57:52",
   "metadata": {
-    "aum": 9771548000,
-    "nav": 38.38,
+    "aum": 9761364000,
+    "nav": 38.34,
     "expense_ratio": null,
     "shares_outstanding": 254600000,
     "currency": "USD"
