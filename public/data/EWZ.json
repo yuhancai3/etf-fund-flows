@@ -1,85 +1,85 @@
 {
   "ticker": "EWZ",
   "name": "iShares MSCI Brazil ETF",
-  "last_updated": "2026-04-06 22:00:04",
+  "last_updated": "2026-04-07 22:04:44",
   "metadata": {
-    "aum": 9761364000,
-    "nav": 38.34,
+    "aum": 9844450000,
+    "nav": 38.5,
     "expense_ratio": null,
-    "shares_outstanding": 254600000,
+    "shares_outstanding": 255700000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 0.0,
-    "monthly": 29608000.0,
-    "three_month": 1643220501.0,
-    "six_month": 2218343903.0
+    "weekly": 42350000.0,
+    "monthly": 71958000.0,
+    "three_month": 1685570501.0,
+    "six_month": 2260693903.0
   },
   "holdings": [
     {
       "name": "Vale SA",
       "symbol": "VALE3.SA",
-      "weight": 11.19
+      "weight": 10.45
     },
     {
       "name": "Nu Holdings Ltd Ordinary Shares Class A",
       "symbol": "NU",
-      "weight": 9.2
+      "weight": 9.0
     },
     {
       "name": "Itau Unibanco Holding SA Participating Preferred",
       "symbol": "ITUB4",
-      "weight": 9.02
+      "weight": 8.4
     },
     {
       "name": "Petroleo Brasileiro SA Petrobras Participating Preferred",
       "symbol": "PETR4",
-      "weight": 6.21
+      "weight": 7.7
     },
     {
       "name": "Petroleo Brasileiro SA Petrobras",
       "symbol": "PETR3.SA",
-      "weight": 5.58
-    },
-    {
-      "name": "Bank Bradesco SA Participating Preferred",
-      "symbol": "BBDC4",
-      "weight": 3.63
+      "weight": 7.05
     },
     {
       "name": "B3 SA - Brasil Bolsa Balcao",
       "symbol": "B3SA3.SA",
-      "weight": 3.53
+      "weight": 3.62
+    },
+    {
+      "name": "Bank Bradesco SA Participating Preferred",
+      "symbol": "BBDC4",
+      "weight": 3.29
     },
     {
       "name": "Weg SA",
       "symbol": "WEGE3.SA",
-      "weight": 3.13
-    },
-    {
-      "name": "Ambev SA",
-      "symbol": "ABEV3.SA",
-      "weight": 2.9
+      "weight": 3.21
     },
     {
       "name": "Companhia De Saneamento Basico Do Estado De Sao Paulo",
       "symbol": "SBSP3.SA",
-      "weight": 2.86
+      "weight": 2.95
+    },
+    {
+      "name": "Ambev SA",
+      "symbol": "ABEV3.SA",
+      "weight": 2.72
     }
   ],
   "sectors": {
     "realestate": 0.0,
-    "consumer_cyclical": 1.31,
-    "basic_materials": 14.82,
-    "consumer_defensive": 4.63,
-    "technology": 1.2,
-    "communication_services": 2.41,
-    "financial_services": 34.51,
-    "utilities": 12.18,
-    "industrials": 11.78,
-    "energy": 14.55,
-    "healthcare": 2.62
+    "consumer_cyclical": 1.39,
+    "basic_materials": 13.78,
+    "consumer_defensive": 4.59,
+    "technology": 1.08,
+    "communication_services": 2.33,
+    "financial_services": 32.79,
+    "utilities": 12.19,
+    "industrials": 11.27,
+    "energy": 18.07,
+    "healthcare": 2.5
   },
   "flows": [
     {
@@ -2175,13 +2175,24 @@
     {
       "date": "2026-04-06",
       "close": 38.54,
-      "shares": 254600000,
+      "shares": 255700000,
+      "daily_flow": 42350000.0,
+      "weekly_flow": 42350000.0,
+      "monthly_flow": 71958000.0,
+      "three_month_flow": 1685570501.0,
+      "six_month_flow": 2260693903.0,
+      "cumulative_flow": 2604754384.0
+    },
+    {
+      "date": "2026-04-07",
+      "close": 38.46,
+      "shares": 255700000,
       "daily_flow": 0.0,
-      "weekly_flow": 0.0,
-      "monthly_flow": 29608000.0,
-      "three_month_flow": 1643220501.0,
-      "six_month_flow": 2218343903.0,
-      "cumulative_flow": 2562404384.0
+      "weekly_flow": 42350000.0,
+      "monthly_flow": 71958000.0,
+      "three_month_flow": 1685570501.0,
+      "six_month_flow": 2260693903.0,
+      "cumulative_flow": 2604754384.0
     }
   ]
 }

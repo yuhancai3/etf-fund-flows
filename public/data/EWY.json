@@ -1,85 +1,85 @@
 {
   "ticker": "EWY",
   "name": "iShares MSCI South Korea ETF",
-  "last_updated": "2026-04-06 22:00:03",
+  "last_updated": "2026-04-07 22:04:43",
   "metadata": {
-    "aum": 16072505000,
-    "nav": 123.35,
+    "aum": 16536373000,
+    "nav": 126.91,
     "expense_ratio": null,
     "shares_outstanding": 130300000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": -99678000.0,
-    "monthly": 1191172500.0,
-    "three_month": 6023697029.0,
+    "weekly": -76236000.0,
+    "monthly": 526207500.0,
+    "three_month": 5918867027.0,
     "six_month": 7201362246.0
   },
   "holdings": [
     {
       "name": "Samsung Electronics Co Ltd",
       "symbol": "005930.KS",
-      "weight": 23.44
+      "weight": 22.35
     },
     {
       "name": "SK Hynix Inc",
       "symbol": "000660.KS",
-      "weight": 19.76
+      "weight": 18.78
     },
     {
       "name": "Hyundai Motor Co",
       "symbol": "005380.KS",
-      "weight": 3.22
-    },
-    {
-      "name": "SK Square",
-      "symbol": "402340.KS",
-      "weight": 2.25
+      "weight": 2.66
     },
     {
       "name": "KB Financial Group Inc",
       "symbol": "105560.KS",
-      "weight": 2.08
+      "weight": 2.32
     },
     {
-      "name": "Kia Corp",
-      "symbol": "000270.KS",
-      "weight": 1.74
-    },
-    {
-      "name": "Doosan Enerbility Co Ltd",
-      "symbol": "034020.KS",
-      "weight": 1.72
-    },
-    {
-      "name": "Shinhan Financial Group Co Ltd",
-      "symbol": "055550.KS",
-      "weight": 1.51
+      "name": "SK Square",
+      "symbol": "402340.KS",
+      "weight": 2.03
     },
     {
       "name": "Hanwha Aerospace Co Ltd",
       "symbol": "012450.KS",
-      "weight": 1.46
+      "weight": 1.91
+    },
+    {
+      "name": "Doosan Enerbility Co Ltd",
+      "symbol": "034020.KS",
+      "weight": 1.86
+    },
+    {
+      "name": "Shinhan Financial Group Co Ltd",
+      "symbol": "055550.KS",
+      "weight": 1.71
+    },
+    {
+      "name": "Kia Corp",
+      "symbol": "000270.KS",
+      "weight": 1.54
     },
     {
       "name": "Celltrion Inc",
       "symbol": "068270.KS",
-      "weight": 1.37
+      "weight": 1.42
     }
   ],
   "sectors": {
     "realestate": 0.0,
-    "consumer_cyclical": 7.77,
-    "basic_materials": 2.01,
-    "consumer_defensive": 1.53,
-    "technology": 49.69,
-    "communication_services": 3.51,
-    "financial_services": 10.39,
-    "utilities": 0.63,
-    "industrials": 19.0,
-    "energy": 1.32,
-    "healthcare": 4.14
+    "consumer_cyclical": 6.72,
+    "basic_materials": 1.93,
+    "consumer_defensive": 2.03,
+    "technology": 47.39,
+    "communication_services": 3.65,
+    "financial_services": 11.43,
+    "utilities": 0.57,
+    "industrials": 20.46,
+    "energy": 1.43,
+    "healthcare": 4.39
   },
   "flows": [
     {
@@ -2180,6 +2180,17 @@
       "weekly_flow": -99678000.0,
       "monthly_flow": 1191172500.0,
       "three_month_flow": 6023697029.0,
+      "six_month_flow": 7201362246.0,
+      "cumulative_flow": 7382243595.0
+    },
+    {
+      "date": "2026-04-07",
+      "close": 127.19,
+      "shares": 130300000,
+      "daily_flow": 0.0,
+      "weekly_flow": -76236000.0,
+      "monthly_flow": 526207500.0,
+      "three_month_flow": 5918867027.0,
       "six_month_flow": 7201362246.0,
       "cumulative_flow": 7382243595.0
     }

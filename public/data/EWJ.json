@@ -1,18 +1,18 @@
 {
   "ticker": "EWJ",
   "name": "iShares MSCI Japan ETF",
-  "last_updated": "2026-04-06 22:00:04",
+  "last_updated": "2026-04-07 22:04:45",
   "metadata": {
-    "aum": 18747828000,
-    "nav": 85.14,
+    "aum": 18769848000,
+    "nav": 85.24,
     "expense_ratio": null,
     "shares_outstanding": 220200000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": -26004000.0,
-    "monthly": -254430000.0,
+    "weekly": 512490000.0,
+    "monthly": -26199000.0,
     "three_month": 2496524986.0,
     "six_month": 2746850508.0
   },
@@ -20,66 +20,66 @@
     {
       "name": "Toyota Motor Corp",
       "symbol": "7203.T",
-      "weight": 4.43
+      "weight": 4.1
     },
     {
       "name": "Mitsubishi UFJ Financial Group Inc",
       "symbol": "8306.T",
-      "weight": 4.09
+      "weight": 4.01
     },
     {
       "name": "Hitachi Ltd",
       "symbol": "6501.T",
-      "weight": 2.93
+      "weight": 2.8
     },
     {
       "name": "Sony Group Corp",
       "symbol": "6758.T",
-      "weight": 2.74
+      "weight": 2.7
     },
     {
       "name": "Sumitomo Mitsui Financial Group Inc",
       "symbol": "8316.T",
-      "weight": 2.68
-    },
-    {
-      "name": "Advantest Corp",
-      "symbol": "6857.T",
       "weight": 2.51
-    },
-    {
-      "name": "Tokyo Electron Ltd",
-      "symbol": "8035.T",
-      "weight": 2.41
-    },
-    {
-      "name": "Mizuho Financial Group Inc",
-      "symbol": "8411.T",
-      "weight": 2.17
     },
     {
       "name": "Mitsubishi Corp",
       "symbol": "8058.T",
-      "weight": 2.08
+      "weight": 2.35
     },
     {
-      "name": "Mitsubishi Heavy Industries Ltd",
-      "symbol": "7011.T",
-      "weight": 1.96
+      "name": "Tokyo Electron Ltd",
+      "symbol": "8035.T",
+      "weight": 2.28
+    },
+    {
+      "name": "Advantest Corp",
+      "symbol": "6857.T",
+      "weight": 2.13
+    },
+    {
+      "name": "Mizuho Financial Group Inc",
+      "symbol": "8411.T",
+      "weight": 2.07
+    },
+    {
+      "name": "Mitsui & Co Ltd",
+      "symbol": "8031.T",
+      "weight": 2.02
     }
   ],
   "sectors": {
-    "realestate": 2.53,
-    "consumer_cyclical": 13.48,
-    "basic_materials": 2.93,
-    "consumer_defensive": 3.69,
-    "technology": 17.31,
-    "communication_services": 7.19,
-    "financial_services": 17.61,
-    "utilities": 1.13,
-    "industrials": 26.6,
-    "energy": 1.04,
-    "healthcare": 6.49
+    "realestate": 2.41,
+    "consumer_cyclical": 12.98,
+    "basic_materials": 3.01,
+    "consumer_defensive": 3.97,
+    "technology": 16.6,
+    "communication_services": 7.76,
+    "financial_services": 17.75,
+    "utilities": 1.23,
+    "industrials": 26.1,
+    "energy": 1.27,
+    "healthcare": 6.92
   },
   "flows": [
     {
@@ -2179,6 +2179,17 @@
       "daily_flow": 0.0,
       "weekly_flow": -26004000.0,
       "monthly_flow": -254430000.0,
+      "three_month_flow": 2496524986.0,
+      "six_month_flow": 2746850508.0,
+      "cumulative_flow": 1680668695.0
+    },
+    {
+      "date": "2026-04-07",
+      "close": 85.51,
+      "shares": 220200000,
+      "daily_flow": 0.0,
+      "weekly_flow": 512490000.0,
+      "monthly_flow": -26199000.0,
       "three_month_flow": 2496524986.0,
       "six_month_flow": 2746850508.0,
       "cumulative_flow": 1680668695.0
