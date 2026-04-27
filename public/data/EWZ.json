@@ -1,20 +1,20 @@
 {
   "ticker": "EWZ",
   "name": "iShares MSCI Brazil ETF",
-  "last_updated": "2026-04-24 22:09:38",
+  "last_updated": "2026-04-27 22:26:05",
   "metadata": {
-    "aum": 11677836000,
-    "nav": 40.02,
+    "aum": 11654492000,
+    "nav": 39.94,
     "expense_ratio": null,
     "shares_outstanding": 291800000,
     "currency": "USD"
   },
   "summary": {
     "daily": 0.0,
-    "weekly": 266852000.0,
+    "weekly": 126602000.0,
     "monthly": 1533755500.0,
-    "three_month": 2425691002.0,
-    "six_month": 3681818090.0
+    "three_month": 2282911999.0,
+    "six_month": 3681818082.0
   },
   "holdings": [
     {
@@ -97,56 +97,56 @@
       "date": "2025-07-03",
       "close": 28.32,
       "shares": 181450000,
-      "daily_flow": 42476604.0,
-      "weekly_flow": 74597571.0,
-      "monthly_flow": 74597571.0,
-      "three_month_flow": 74597571.0,
-      "six_month_flow": 74597571.0,
-      "cumulative_flow": 74597571.0
+      "daily_flow": 42476601.0,
+      "weekly_flow": 74597568.0,
+      "monthly_flow": 74597568.0,
+      "three_month_flow": 74597568.0,
+      "six_month_flow": 74597568.0,
+      "cumulative_flow": 74597568.0
     },
     {
       "date": "2025-07-07",
       "close": 27.63,
       "shares": 182550000,
       "daily_flow": 30394950.0,
-      "weekly_flow": 104992522.0,
-      "monthly_flow": 104992522.0,
-      "three_month_flow": 104992522.0,
-      "six_month_flow": 104992522.0,
-      "cumulative_flow": 104992522.0
+      "weekly_flow": 104992519.0,
+      "monthly_flow": 104992519.0,
+      "three_month_flow": 104992519.0,
+      "six_month_flow": 104992519.0,
+      "cumulative_flow": 104992519.0
     },
     {
       "date": "2025-07-08",
       "close": 27.74,
       "shares": 184150000,
       "daily_flow": 44380875.0,
-      "weekly_flow": 149373396.0,
-      "monthly_flow": 149373396.0,
-      "three_month_flow": 149373396.0,
-      "six_month_flow": 149373396.0,
-      "cumulative_flow": 149373396.0
+      "weekly_flow": 149373393.0,
+      "monthly_flow": 149373393.0,
+      "three_month_flow": 149373393.0,
+      "six_month_flow": 149373393.0,
+      "cumulative_flow": 149373393.0
     },
     {
       "date": "2025-07-09",
       "close": 27.21,
       "shares": 186050000,
       "daily_flow": 51692667.0,
-      "weekly_flow": 201066063.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "weekly_flow": 201066061.0,
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-10",
       "close": 26.78,
       "shares": 186050000,
       "daily_flow": 0.0,
-      "weekly_flow": 168945096.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "weekly_flow": 168945093.0,
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-11",
@@ -154,10 +154,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 126468492.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-14",
@@ -165,10 +165,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 96073542.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-15",
@@ -176,10 +176,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 51692667.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-16",
@@ -187,10 +187,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-17",
@@ -198,10 +198,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-18",
@@ -209,10 +209,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-21",
@@ -220,10 +220,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-22",
@@ -231,10 +231,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-23",
@@ -242,10 +242,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-24",
@@ -253,10 +253,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-25",
@@ -264,10 +264,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-28",
@@ -275,10 +275,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-29",
@@ -286,10 +286,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-30",
@@ -297,10 +297,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-07-31",
@@ -308,10 +308,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 201066063.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 201066061.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-01",
@@ -319,10 +319,10 @@
       "shares": 186050000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 168945096.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "monthly_flow": 168945093.0,
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-04",
@@ -331,9 +331,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 126468492.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-05",
@@ -342,9 +342,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 96073542.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-06",
@@ -353,9 +353,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 51692667.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-07",
@@ -364,9 +364,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-08",
@@ -375,9 +375,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-11",
@@ -386,9 +386,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-12",
@@ -397,9 +397,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-13",
@@ -408,9 +408,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-14",
@@ -419,9 +419,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-15",
@@ -430,9 +430,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-18",
@@ -441,9 +441,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-19",
@@ -452,9 +452,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-20",
@@ -463,9 +463,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-21",
@@ -474,9 +474,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-22",
@@ -485,9 +485,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-25",
@@ -496,9 +496,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-26",
@@ -507,9 +507,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 201066063.0,
-      "six_month_flow": 201066063.0,
-      "cumulative_flow": 201066063.0
+      "three_month_flow": 201066061.0,
+      "six_month_flow": 201066061.0,
+      "cumulative_flow": 201066061.0
     },
     {
       "date": "2025-08-27",
@@ -518,9 +518,9 @@
       "daily_flow": -39252575.0,
       "weekly_flow": -39252575.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-08-28",
@@ -529,9 +529,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -39252575.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-08-29",
@@ -540,9 +540,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -39252575.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-02",
@@ -551,9 +551,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -39252575.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-03",
@@ -562,9 +562,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -39252575.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-04",
@@ -573,9 +573,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-05",
@@ -584,9 +584,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-08",
@@ -595,9 +595,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-09",
@@ -606,9 +606,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-10",
@@ -617,9 +617,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-11",
@@ -628,9 +628,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-12",
@@ -639,9 +639,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-15",
@@ -650,9 +650,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-16",
@@ -661,9 +661,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-17",
@@ -672,9 +672,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-18",
@@ -683,9 +683,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-19",
@@ -694,9 +694,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -39252575.0,
-      "three_month_flow": 161813488.0,
-      "six_month_flow": 161813488.0,
-      "cumulative_flow": 161813488.0
+      "three_month_flow": 161813485.0,
+      "six_month_flow": 161813485.0,
+      "cumulative_flow": 161813485.0
     },
     {
       "date": "2025-09-22",
@@ -705,9 +705,9 @@
       "daily_flow": -20823343.0,
       "weekly_flow": -20823343.0,
       "monthly_flow": -60075918.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-23",
@@ -716,9 +716,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -20823343.0,
       "monthly_flow": -60075918.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-24",
@@ -727,9 +727,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -20823343.0,
       "monthly_flow": -60075918.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-25",
@@ -738,9 +738,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -20823343.0,
       "monthly_flow": -60075918.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-26",
@@ -749,9 +749,9 @@
       "daily_flow": 0.0,
       "weekly_flow": -20823343.0,
       "monthly_flow": -20823343.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-29",
@@ -760,9 +760,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -20823343.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-09-30",
@@ -771,9 +771,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": -20823343.0,
-      "three_month_flow": 140990145.0,
-      "six_month_flow": 140990145.0,
-      "cumulative_flow": 140990145.0
+      "three_month_flow": 140990142.0,
+      "six_month_flow": 140990142.0,
+      "cumulative_flow": 140990142.0
     },
     {
       "date": "2025-10-01",
@@ -782,9 +782,9 @@
       "daily_flow": 132951333.0,
       "weekly_flow": 132951333.0,
       "monthly_flow": 112127990.0,
-      "three_month_flow": 241820510.0,
-      "six_month_flow": 273941478.0,
-      "cumulative_flow": 273941478.0
+      "three_month_flow": 241820507.0,
+      "six_month_flow": 273941475.0,
+      "cumulative_flow": 273941475.0
     },
     {
       "date": "2025-10-02",
@@ -794,8 +794,8 @@
       "weekly_flow": 203070336.0,
       "monthly_flow": 182246993.0,
       "three_month_flow": 269462910.0,
-      "six_month_flow": 344060481.0,
-      "cumulative_flow": 344060481.0
+      "six_month_flow": 344060478.0,
+      "cumulative_flow": 344060478.0
     },
     {
       "date": "2025-10-03",
@@ -805,63 +805,63 @@
       "weekly_flow": 203070336.0,
       "monthly_flow": 182246993.0,
       "three_month_flow": 239067960.0,
-      "six_month_flow": 344060481.0,
-      "cumulative_flow": 344060481.0
+      "six_month_flow": 344060478.0,
+      "cumulative_flow": 344060478.0
     },
     {
       "date": "2025-10-06",
       "close": 29.28,
       "shares": 193250000,
-      "daily_flow": 70281313.0,
-      "weekly_flow": 273351649.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 264968398.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "daily_flow": 70281317.0,
+      "weekly_flow": 273351653.0,
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 264968402.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-07",
       "close": 28.68,
       "shares": 193250000,
       "daily_flow": 0.0,
-      "weekly_flow": 273351649.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "weekly_flow": 273351653.0,
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-08",
       "close": 28.86,
       "shares": 193250000,
       "daily_flow": 0.0,
-      "weekly_flow": 140400316.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "weekly_flow": 140400320.0,
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-09",
       "close": 28.67,
       "shares": 193250000,
       "daily_flow": 0.0,
-      "weekly_flow": 70281313.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "weekly_flow": 70281317.0,
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-10",
       "close": 27.82,
       "shares": 193250000,
       "daily_flow": 0.0,
-      "weekly_flow": 70281313.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "weekly_flow": 70281317.0,
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-13",
@@ -869,10 +869,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-14",
@@ -880,10 +880,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-15",
@@ -891,10 +891,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-16",
@@ -902,10 +902,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-17",
@@ -913,10 +913,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-20",
@@ -924,10 +924,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 252528306.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 252528310.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-21",
@@ -935,10 +935,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-22",
@@ -946,10 +946,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-23",
@@ -957,10 +957,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-24",
@@ -968,10 +968,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-27",
@@ -979,10 +979,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-28",
@@ -990,10 +990,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-29",
@@ -1001,10 +1001,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 273351649.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 273351653.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-30",
@@ -1012,10 +1012,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 140400316.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 140400320.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-10-31",
@@ -1023,10 +1023,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 70281313.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 70281317.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-03",
@@ -1034,10 +1034,10 @@
       "shares": 193250000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 70281313.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "monthly_flow": 70281317.0,
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-04",
@@ -1046,9 +1046,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-05",
@@ -1057,9 +1057,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-06",
@@ -1068,9 +1068,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-07",
@@ -1079,9 +1079,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-10",
@@ -1090,9 +1090,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-11",
@@ -1101,9 +1101,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 0.0,
-      "three_month_flow": 213275731.0,
-      "six_month_flow": 414341794.0,
-      "cumulative_flow": 414341794.0
+      "three_month_flow": 213275735.0,
+      "six_month_flow": 414341796.0,
+      "cumulative_flow": 414341796.0
     },
     {
       "date": "2025-11-12",
@@ -1112,9 +1112,9 @@
       "daily_flow": 24071526.0,
       "weekly_flow": 24071526.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-13",
@@ -1123,9 +1123,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 24071526.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-14",
@@ -1134,9 +1134,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 24071526.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-17",
@@ -1145,9 +1145,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 24071526.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-18",
@@ -1156,9 +1156,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 24071526.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-19",
@@ -1167,9 +1167,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-20",
@@ -1178,9 +1178,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-21",
@@ -1189,9 +1189,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-24",
@@ -1200,64 +1200,64 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 24071526.0,
-      "three_month_flow": 237347256.0,
-      "six_month_flow": 438413319.0,
-      "cumulative_flow": 438413319.0
+      "three_month_flow": 237347261.0,
+      "six_month_flow": 438413321.0,
+      "cumulative_flow": 438413321.0
     },
     {
       "date": "2025-11-25",
       "close": 31.45,
       "shares": 196300000,
-      "daily_flow": 72330514.0,
-      "weekly_flow": 72330514.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "daily_flow": 72330510.0,
+      "weekly_flow": 72330510.0,
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-11-26",
       "close": 32.34,
       "shares": 196300000,
       "daily_flow": 0.0,
-      "weekly_flow": 72330514.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "weekly_flow": 72330510.0,
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-11-28",
       "close": 32.47,
       "shares": 196300000,
       "daily_flow": 0.0,
-      "weekly_flow": 72330514.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "weekly_flow": 72330510.0,
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-01",
       "close": 32.27,
       "shares": 196300000,
       "daily_flow": 0.0,
-      "weekly_flow": 72330514.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "weekly_flow": 72330510.0,
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-02",
       "close": 32.88,
       "shares": 196300000,
       "daily_flow": 0.0,
-      "weekly_flow": 72330514.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "weekly_flow": 72330510.0,
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-03",
@@ -1265,10 +1265,10 @@
       "shares": 196300000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-04",
@@ -1276,10 +1276,10 @@
       "shares": 196300000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-05",
@@ -1287,65 +1287,65 @@
       "shares": 196300000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 96402040.0,
-      "three_month_flow": 348930345.0,
-      "six_month_flow": 510743833.0,
-      "cumulative_flow": 510743833.0
+      "monthly_flow": 96402035.0,
+      "three_month_flow": 348930346.0,
+      "six_month_flow": 510743831.0,
+      "cumulative_flow": 510743831.0
     },
     {
       "date": "2025-12-08",
       "close": 31.64,
       "shares": 198300000,
-      "daily_flow": 63282558.0,
-      "weekly_flow": 63282558.0,
-      "monthly_flow": 159684598.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "daily_flow": 63282555.0,
+      "weekly_flow": 63282555.0,
+      "monthly_flow": 159684590.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-09",
       "close": 31.63,
       "shares": 198300000,
       "daily_flow": 0.0,
-      "weekly_flow": 63282558.0,
-      "monthly_flow": 159684598.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "weekly_flow": 63282555.0,
+      "monthly_flow": 159684590.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-10",
       "close": 31.66,
       "shares": 198300000,
       "daily_flow": 0.0,
-      "weekly_flow": 63282558.0,
-      "monthly_flow": 159684598.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "weekly_flow": 63282555.0,
+      "monthly_flow": 159684590.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-11",
       "close": 32.04,
       "shares": 198300000,
       "daily_flow": 0.0,
-      "weekly_flow": 63282558.0,
-      "monthly_flow": 159684598.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "weekly_flow": 63282555.0,
+      "monthly_flow": 159684590.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-12",
       "close": 32.19,
       "shares": 198300000,
       "daily_flow": 0.0,
-      "weekly_flow": 63282558.0,
-      "monthly_flow": 135613072.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "weekly_flow": 63282555.0,
+      "monthly_flow": 135613064.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-15",
@@ -1353,10 +1353,10 @@
       "shares": 198300000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 135613072.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "monthly_flow": 135613064.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-16",
@@ -1364,10 +1364,10 @@
       "shares": 198300000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 135613072.0,
-      "three_month_flow": 412212904.0,
-      "six_month_flow": 574026392.0,
-      "cumulative_flow": 574026392.0
+      "monthly_flow": 135613064.0,
+      "three_month_flow": 412212900.0,
+      "six_month_flow": 574026385.0,
+      "cumulative_flow": 574026385.0
     },
     {
       "date": "2025-12-17",
@@ -1375,10 +1375,10 @@
       "shares": 203050000,
       "daily_flow": 146753236.0,
       "weekly_flow": 146753236.0,
-      "monthly_flow": 282366309.0,
-      "three_month_flow": 558966140.0,
-      "six_month_flow": 720779628.0,
-      "cumulative_flow": 720779628.0
+      "monthly_flow": 282366300.0,
+      "three_month_flow": 558966136.0,
+      "six_month_flow": 720779622.0,
+      "cumulative_flow": 720779622.0
     },
     {
       "date": "2025-12-18",
@@ -1386,10 +1386,10 @@
       "shares": 203050000,
       "daily_flow": 0.0,
       "weekly_flow": 146753236.0,
-      "monthly_flow": 282366309.0,
-      "three_month_flow": 558966140.0,
-      "six_month_flow": 720779628.0,
-      "cumulative_flow": 720779628.0
+      "monthly_flow": 282366300.0,
+      "three_month_flow": 558966136.0,
+      "six_month_flow": 720779622.0,
+      "cumulative_flow": 720779622.0
     },
     {
       "date": "2025-12-19",
@@ -1397,10 +1397,10 @@
       "shares": 205950000,
       "daily_flow": 90088048.0,
       "weekly_flow": 236841284.0,
-      "monthly_flow": 372454357.0,
-      "three_month_flow": 669877531.0,
-      "six_month_flow": 810867676.0,
-      "cumulative_flow": 810867676.0
+      "monthly_flow": 372454348.0,
+      "three_month_flow": 669877528.0,
+      "six_month_flow": 810867670.0,
+      "cumulative_flow": 810867670.0
     },
     {
       "date": "2025-12-22",
@@ -1408,10 +1408,10 @@
       "shares": 206350000,
       "daily_flow": 12346207.0,
       "weekly_flow": 249187492.0,
-      "monthly_flow": 384800564.0,
-      "three_month_flow": 682223739.0,
-      "six_month_flow": 823213884.0,
-      "cumulative_flow": 823213884.0
+      "monthly_flow": 384800556.0,
+      "three_month_flow": 682223735.0,
+      "six_month_flow": 823213877.0,
+      "cumulative_flow": 823213877.0
     },
     {
       "date": "2025-12-23",
@@ -1419,10 +1419,10 @@
       "shares": 206350000,
       "daily_flow": 0.0,
       "weekly_flow": 249187492.0,
-      "monthly_flow": 384800564.0,
-      "three_month_flow": 682223739.0,
-      "six_month_flow": 823213884.0,
-      "cumulative_flow": 823213884.0
+      "monthly_flow": 384800556.0,
+      "three_month_flow": 682223735.0,
+      "six_month_flow": 823213877.0,
+      "cumulative_flow": 823213877.0
     },
     {
       "date": "2025-12-24",
@@ -1430,10 +1430,10 @@
       "shares": 206350000,
       "daily_flow": 0.0,
       "weekly_flow": 102434255.0,
-      "monthly_flow": 384800564.0,
-      "three_month_flow": 682223739.0,
-      "six_month_flow": 823213884.0,
-      "cumulative_flow": 823213884.0
+      "monthly_flow": 384800556.0,
+      "three_month_flow": 682223735.0,
+      "six_month_flow": 823213877.0,
+      "cumulative_flow": 823213877.0
     },
     {
       "date": "2025-12-26",
@@ -1441,10 +1441,10 @@
       "shares": 206350000,
       "daily_flow": 0.0,
       "weekly_flow": 102434255.0,
-      "monthly_flow": 312470050.0,
-      "three_month_flow": 682223739.0,
-      "six_month_flow": 823213884.0,
-      "cumulative_flow": 823213884.0
+      "monthly_flow": 312470046.0,
+      "three_month_flow": 682223735.0,
+      "six_month_flow": 823213877.0,
+      "cumulative_flow": 823213877.0
     },
     {
       "date": "2025-12-29",
@@ -1452,10 +1452,10 @@
       "shares": 206350000,
       "daily_flow": 0.0,
       "weekly_flow": 12346207.0,
-      "monthly_flow": 312470050.0,
-      "three_month_flow": 682223739.0,
-      "six_month_flow": 823213884.0,
-      "cumulative_flow": 823213884.0
+      "monthly_flow": 312470046.0,
+      "three_month_flow": 682223735.0,
+      "six_month_flow": 823213877.0,
+      "cumulative_flow": 823213877.0
     },
     {
       "date": "2025-12-30",
@@ -1463,10 +1463,10 @@
       "shares": 209350000,
       "daily_flow": 95969999.0,
       "weekly_flow": 95969999.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 778193738.0,
-      "six_month_flow": 919183883.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 778193734.0,
+      "six_month_flow": 919183876.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2025-12-31",
@@ -1474,10 +1474,10 @@
       "shares": 209350000,
       "daily_flow": 0.0,
       "weekly_flow": 95969999.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 645242405.0,
-      "six_month_flow": 887062915.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 645242401.0,
+      "six_month_flow": 887062909.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-02",
@@ -1485,10 +1485,10 @@
       "shares": 209350000,
       "daily_flow": 0.0,
       "weekly_flow": 95969999.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 575123402.0,
-      "six_month_flow": 844586312.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 575123398.0,
+      "six_month_flow": 844586308.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-05",
@@ -1496,10 +1496,10 @@
       "shares": 209350000,
       "daily_flow": 0.0,
       "weekly_flow": 95969999.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 575123402.0,
-      "six_month_flow": 814191361.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 575123398.0,
+      "six_month_flow": 814191358.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-06",
@@ -1507,10 +1507,10 @@
       "shares": 209350000,
       "daily_flow": 0.0,
       "weekly_flow": 95969999.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 504842089.0,
-      "six_month_flow": 769810487.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 504842081.0,
+      "six_month_flow": 769810483.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-07",
@@ -1518,10 +1518,10 @@
       "shares": 209350000,
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
-      "monthly_flow": 408440049.0,
-      "three_month_flow": 504842089.0,
-      "six_month_flow": 718117819.0,
-      "cumulative_flow": 919183883.0
+      "monthly_flow": 408440046.0,
+      "three_month_flow": 504842081.0,
+      "six_month_flow": 718117816.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-08",
@@ -1530,9 +1530,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 345157491.0,
-      "three_month_flow": 504842089.0,
-      "six_month_flow": 718117819.0,
-      "cumulative_flow": 919183883.0
+      "three_month_flow": 504842081.0,
+      "six_month_flow": 718117816.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-09",
@@ -1541,9 +1541,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 345157491.0,
-      "three_month_flow": 504842089.0,
-      "six_month_flow": 718117819.0,
-      "cumulative_flow": 919183883.0
+      "three_month_flow": 504842081.0,
+      "six_month_flow": 718117816.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-12",
@@ -1552,9 +1552,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 345157491.0,
-      "three_month_flow": 504842089.0,
-      "six_month_flow": 718117819.0,
-      "cumulative_flow": 919183883.0
+      "three_month_flow": 504842081.0,
+      "six_month_flow": 718117816.0,
+      "cumulative_flow": 919183876.0
     },
     {
       "date": "2026-01-13",
@@ -1563,9 +1563,9 @@
       "daily_flow": 65260002.0,
       "weekly_flow": 65260002.0,
       "monthly_flow": 410417493.0,
-      "three_month_flow": 570102091.0,
-      "six_month_flow": 783377822.0,
-      "cumulative_flow": 984443885.0
+      "three_month_flow": 570102083.0,
+      "six_month_flow": 783377818.0,
+      "cumulative_flow": 984443879.0
     },
     {
       "date": "2026-01-14",
@@ -1574,9 +1574,9 @@
       "daily_flow": 66320000.0,
       "weekly_flow": 131580002.0,
       "monthly_flow": 476737493.0,
-      "three_month_flow": 636422091.0,
-      "six_month_flow": 849697821.0,
-      "cumulative_flow": 1050763885.0
+      "three_month_flow": 636422083.0,
+      "six_month_flow": 849697818.0,
+      "cumulative_flow": 1050763878.0
     },
     {
       "date": "2026-01-15",
@@ -1585,9 +1585,9 @@
       "daily_flow": 60048001.0,
       "weekly_flow": 191628003.0,
       "monthly_flow": 536785494.0,
-      "three_month_flow": 696470092.0,
-      "six_month_flow": 909745822.0,
-      "cumulative_flow": 1110811886.0
+      "three_month_flow": 696470084.0,
+      "six_month_flow": 909745819.0,
+      "cumulative_flow": 1110811879.0
     },
     {
       "date": "2026-01-16",
@@ -1596,9 +1596,9 @@
       "daily_flow": 99509995.0,
       "weekly_flow": 291137997.0,
       "monthly_flow": 636295488.0,
-      "three_month_flow": 795980086.0,
-      "six_month_flow": 1009255817.0,
-      "cumulative_flow": 1210321880.0
+      "three_month_flow": 795980078.0,
+      "six_month_flow": 1009255813.0,
+      "cumulative_flow": 1210321874.0
     },
     {
       "date": "2026-01-20",
@@ -1607,9 +1607,9 @@
       "daily_flow": 87411997.0,
       "weekly_flow": 378549995.0,
       "monthly_flow": 576954249.0,
-      "three_month_flow": 883392084.0,
-      "six_month_flow": 1096667814.0,
-      "cumulative_flow": 1297733878.0
+      "three_month_flow": 883392075.0,
+      "six_month_flow": 1096667811.0,
+      "cumulative_flow": 1297733871.0
     },
     {
       "date": "2026-01-21",
@@ -1618,9 +1618,9 @@
       "daily_flow": 21012000.0,
       "weekly_flow": 334301993.0,
       "monthly_flow": 597966250.0,
-      "three_month_flow": 904404084.0,
-      "six_month_flow": 1117679814.0,
-      "cumulative_flow": 1318745878.0
+      "three_month_flow": 904404076.0,
+      "six_month_flow": 1117679811.0,
+      "cumulative_flow": 1318745871.0
     },
     {
       "date": "2026-01-22",
@@ -1629,9 +1629,9 @@
       "daily_flow": 179750004.0,
       "weekly_flow": 447731997.0,
       "monthly_flow": 687628205.0,
-      "three_month_flow": 1084154088.0,
-      "six_month_flow": 1297429818.0,
-      "cumulative_flow": 1498495882.0
+      "three_month_flow": 1084154080.0,
+      "six_month_flow": 1297429815.0,
+      "cumulative_flow": 1498495875.0
     },
     {
       "date": "2026-01-23",
@@ -1640,9 +1640,9 @@
       "daily_flow": 171973001.0,
       "weekly_flow": 559656997.0,
       "monthly_flow": 847254999.0,
-      "three_month_flow": 1256127088.0,
-      "six_month_flow": 1469402819.0,
-      "cumulative_flow": 1670468882.0
+      "three_month_flow": 1256127080.0,
+      "six_month_flow": 1469402815.0,
+      "cumulative_flow": 1670468876.0
     },
     {
       "date": "2026-01-26",
@@ -1651,9 +1651,9 @@
       "daily_flow": 142779002.0,
       "weekly_flow": 602926004.0,
       "monthly_flow": 990034001.0,
-      "three_month_flow": 1398906091.0,
-      "six_month_flow": 1612181821.0,
-      "cumulative_flow": 1813247885.0
+      "three_month_flow": 1398906083.0,
+      "six_month_flow": 1612181818.0,
+      "cumulative_flow": 1813247878.0
     },
     {
       "date": "2026-01-27",
@@ -1662,9 +1662,9 @@
       "daily_flow": 41678999.0,
       "weekly_flow": 557193007.0,
       "monthly_flow": 1031713000.0,
-      "three_month_flow": 1440585090.0,
-      "six_month_flow": 1653860821.0,
-      "cumulative_flow": 1854926884.0
+      "three_month_flow": 1440585082.0,
+      "six_month_flow": 1653860817.0,
+      "cumulative_flow": 1854926878.0
     },
     {
       "date": "2026-01-28",
@@ -1673,9 +1673,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 536181006.0,
       "monthly_flow": 1031713000.0,
-      "three_month_flow": 1440585090.0,
-      "six_month_flow": 1653860821.0,
-      "cumulative_flow": 1854926884.0
+      "three_month_flow": 1440585082.0,
+      "six_month_flow": 1653860817.0,
+      "cumulative_flow": 1854926878.0
     },
     {
       "date": "2026-01-29",
@@ -1684,9 +1684,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 356431002.0,
       "monthly_flow": 1031713000.0,
-      "three_month_flow": 1440585090.0,
-      "six_month_flow": 1653860821.0,
-      "cumulative_flow": 1854926884.0
+      "three_month_flow": 1440585082.0,
+      "six_month_flow": 1653860817.0,
+      "cumulative_flow": 1854926878.0
     },
     {
       "date": "2026-01-30",
@@ -1695,9 +1695,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 184458002.0,
       "monthly_flow": 935743001.0,
-      "three_month_flow": 1440585090.0,
-      "six_month_flow": 1653860821.0,
-      "cumulative_flow": 1854926884.0
+      "three_month_flow": 1440585082.0,
+      "six_month_flow": 1653860817.0,
+      "cumulative_flow": 1854926878.0
     },
     {
       "date": "2026-02-02",
@@ -1706,9 +1706,9 @@
       "daily_flow": 56175001.0,
       "weekly_flow": 97854000.0,
       "monthly_flow": 991918002.0,
-      "three_month_flow": 1496760091.0,
-      "six_month_flow": 1710035822.0,
-      "cumulative_flow": 1911101885.0
+      "three_month_flow": 1496760083.0,
+      "six_month_flow": 1710035818.0,
+      "cumulative_flow": 1911101879.0
     },
     {
       "date": "2026-02-03",
@@ -1717,9 +1717,9 @@
       "daily_flow": 41844001.0,
       "weekly_flow": 98019002.0,
       "monthly_flow": 1033762003.0,
-      "three_month_flow": 1538604092.0,
-      "six_month_flow": 1751879823.0,
-      "cumulative_flow": 1952945886.0
+      "three_month_flow": 1538604084.0,
+      "six_month_flow": 1751879819.0,
+      "cumulative_flow": 1952945880.0
     },
     {
       "date": "2026-02-04",
@@ -1728,9 +1728,9 @@
       "daily_flow": 73959999.0,
       "weekly_flow": 171979001.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-05",
@@ -1739,9 +1739,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 171979001.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-06",
@@ -1750,9 +1750,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 171979001.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-09",
@@ -1761,9 +1761,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 115804000.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-10",
@@ -1772,9 +1772,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 73959999.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-11",
@@ -1783,9 +1783,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 0.0,
       "monthly_flow": 1107722002.0,
-      "three_month_flow": 1612564091.0,
-      "six_month_flow": 1825839822.0,
-      "cumulative_flow": 2026905885.0
+      "three_month_flow": 1612564083.0,
+      "six_month_flow": 1825839818.0,
+      "cumulative_flow": 2026905879.0
     },
     {
       "date": "2026-02-12",
@@ -1794,9 +1794,9 @@
       "daily_flow": 7698000.0,
       "weekly_flow": 7698000.0,
       "monthly_flow": 1050160001.0,
-      "three_month_flow": 1620262092.0,
-      "six_month_flow": 1833537822.0,
-      "cumulative_flow": 2034603886.0
+      "three_month_flow": 1620262084.0,
+      "six_month_flow": 1833537819.0,
+      "cumulative_flow": 2034603879.0
     },
     {
       "date": "2026-02-13",
@@ -1805,9 +1805,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 7698000.0,
       "monthly_flow": 983840001.0,
-      "three_month_flow": 1596190566.0,
-      "six_month_flow": 1833537822.0,
-      "cumulative_flow": 2034603886.0
+      "three_month_flow": 1596190558.0,
+      "six_month_flow": 1833537819.0,
+      "cumulative_flow": 2034603879.0
     },
     {
       "date": "2026-02-17",
@@ -1816,9 +1816,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 7698000.0,
       "monthly_flow": 923792000.0,
-      "three_month_flow": 1596190566.0,
-      "six_month_flow": 1833537822.0,
-      "cumulative_flow": 2034603886.0
+      "three_month_flow": 1596190558.0,
+      "six_month_flow": 1833537819.0,
+      "cumulative_flow": 2034603879.0
     },
     {
       "date": "2026-02-18",
@@ -1827,9 +1827,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 7698000.0,
       "monthly_flow": 824282005.0,
-      "three_month_flow": 1596190566.0,
-      "six_month_flow": 1833537822.0,
-      "cumulative_flow": 2034603886.0
+      "three_month_flow": 1596190558.0,
+      "six_month_flow": 1833537819.0,
+      "cumulative_flow": 2034603879.0
     },
     {
       "date": "2026-02-19",
@@ -1838,9 +1838,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 7698000.0,
       "monthly_flow": 736870008.0,
-      "three_month_flow": 1596190566.0,
-      "six_month_flow": 1833537822.0,
-      "cumulative_flow": 2034603886.0
+      "three_month_flow": 1596190558.0,
+      "six_month_flow": 1833537819.0,
+      "cumulative_flow": 2034603879.0
     },
     {
       "date": "2026-02-20",
@@ -1849,9 +1849,9 @@
       "daily_flow": 55117999.0,
       "weekly_flow": 55117999.0,
       "monthly_flow": 770976006.0,
-      "three_month_flow": 1651308565.0,
-      "six_month_flow": 1888655821.0,
-      "cumulative_flow": 2089721884.0
+      "three_month_flow": 1651308556.0,
+      "six_month_flow": 1888655817.0,
+      "cumulative_flow": 2089721878.0
     },
     {
       "date": "2026-02-23",
@@ -1860,9 +1860,9 @@
       "daily_flow": 77540001.0,
       "weekly_flow": 132657999.0,
       "monthly_flow": 668766003.0,
-      "three_month_flow": 1728848566.0,
-      "six_month_flow": 1966195822.0,
-      "cumulative_flow": 2167261885.0
+      "three_month_flow": 1728848557.0,
+      "six_month_flow": 1966195818.0,
+      "cumulative_flow": 2167261879.0
     },
     {
       "date": "2026-02-24",
@@ -1871,9 +1871,9 @@
       "daily_flow": 59205002.0,
       "weekly_flow": 191863001.0,
       "monthly_flow": 555998005.0,
-      "three_month_flow": 1788053567.0,
-      "six_month_flow": 2025400823.0,
-      "cumulative_flow": 2226466887.0
+      "three_month_flow": 1788053559.0,
+      "six_month_flow": 2025400820.0,
+      "cumulative_flow": 2226466880.0
     },
     {
       "date": "2026-02-25",
@@ -1882,9 +1882,9 @@
       "daily_flow": 81159500.0,
       "weekly_flow": 273022502.0,
       "monthly_flow": 494378502.0,
-      "three_month_flow": 1869213068.0,
-      "six_month_flow": 2106560324.0,
-      "cumulative_flow": 2307626387.0
+      "three_month_flow": 1869213060.0,
+      "six_month_flow": 2106560320.0,
+      "cumulative_flow": 2307626381.0
     },
     {
       "date": "2026-02-26",
@@ -1893,9 +1893,9 @@
       "daily_flow": 58649998.0,
       "weekly_flow": 331672499.0,
       "monthly_flow": 511349501.0,
-      "three_month_flow": 1927863065.0,
-      "six_month_flow": 2165210322.0,
-      "cumulative_flow": 2366276385.0
+      "three_month_flow": 1927863057.0,
+      "six_month_flow": 2165210318.0,
+      "cumulative_flow": 2366276378.0
     },
     {
       "date": "2026-02-27",
@@ -1904,9 +1904,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 276554501.0,
       "monthly_flow": 511349501.0,
-      "three_month_flow": 1855532551.0,
-      "six_month_flow": 2204462897.0,
-      "cumulative_flow": 2366276385.0
+      "three_month_flow": 1855532548.0,
+      "six_month_flow": 2204462893.0,
+      "cumulative_flow": 2366276378.0
     },
     {
       "date": "2026-03-02",
@@ -1915,9 +1915,9 @@
       "daily_flow": 50231999.0,
       "weekly_flow": 249246499.0,
       "monthly_flow": 561581500.0,
-      "three_month_flow": 1905764551.0,
-      "six_month_flow": 2254694896.0,
-      "cumulative_flow": 2416508384.0
+      "three_month_flow": 1905764547.0,
+      "six_month_flow": 2254694892.0,
+      "cumulative_flow": 2416508378.0
     },
     {
       "date": "2026-03-03",
@@ -1926,9 +1926,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 190041497.0,
       "monthly_flow": 561581500.0,
-      "three_month_flow": 1905764551.0,
-      "six_month_flow": 2254694896.0,
-      "cumulative_flow": 2416508384.0
+      "three_month_flow": 1905764547.0,
+      "six_month_flow": 2254694892.0,
+      "cumulative_flow": 2416508378.0
     },
     {
       "date": "2026-03-04",
@@ -1937,9 +1937,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 108881997.0,
       "monthly_flow": 505406499.0,
-      "three_month_flow": 1905764551.0,
-      "six_month_flow": 2254694896.0,
-      "cumulative_flow": 2416508384.0
+      "three_month_flow": 1905764547.0,
+      "six_month_flow": 2254694892.0,
+      "cumulative_flow": 2416508378.0
     },
     {
       "date": "2026-03-05",
@@ -1948,9 +1948,9 @@
       "daily_flow": 116288000.0,
       "weekly_flow": 166519999.0,
       "monthly_flow": 579850498.0,
-      "three_month_flow": 2022052551.0,
-      "six_month_flow": 2370982896.0,
-      "cumulative_flow": 2532796384.0
+      "three_month_flow": 2022052547.0,
+      "six_month_flow": 2370982892.0,
+      "cumulative_flow": 2532796378.0
     },
     {
       "date": "2026-03-06",
@@ -1959,9 +1959,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 166519999.0,
       "monthly_flow": 505890499.0,
-      "three_month_flow": 2022052551.0,
-      "six_month_flow": 2370982896.0,
-      "cumulative_flow": 2532796384.0
+      "three_month_flow": 2022052547.0,
+      "six_month_flow": 2370982892.0,
+      "cumulative_flow": 2532796378.0
     },
     {
       "date": "2026-03-09",
@@ -1970,9 +1970,9 @@
       "daily_flow": 29608000.0,
       "weekly_flow": 145896000.0,
       "monthly_flow": 535498499.0,
-      "three_month_flow": 2051660551.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "three_month_flow": 2051660547.0,
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-10",
@@ -1981,9 +1981,9 @@
       "daily_flow": 0.0,
       "weekly_flow": 145896000.0,
       "monthly_flow": 535498499.0,
-      "three_month_flow": 2051660551.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "three_month_flow": 2051660547.0,
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-11",
@@ -1993,8 +1993,8 @@
       "weekly_flow": 145896000.0,
       "monthly_flow": 535498499.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-12",
@@ -2004,8 +2004,8 @@
       "weekly_flow": 29608000.0,
       "monthly_flow": 535498499.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-13",
@@ -2015,8 +2015,8 @@
       "weekly_flow": 29608000.0,
       "monthly_flow": 535498499.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-16",
@@ -2026,8 +2026,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 527800498.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-17",
@@ -2037,8 +2037,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 527800498.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-18",
@@ -2048,8 +2048,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 527800498.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-19",
@@ -2059,8 +2059,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 527800498.0,
       "three_month_flow": 1988377992.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-20",
@@ -2070,8 +2070,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 527800498.0,
       "three_month_flow": 1841624756.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-23",
@@ -2081,8 +2081,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 472682500.0,
       "three_month_flow": 1841624756.0,
-      "six_month_flow": 2400590896.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2400590892.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-24",
@@ -2092,8 +2092,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 395142499.0,
       "three_month_flow": 1751536708.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-25",
@@ -2103,8 +2103,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 335937497.0,
       "three_month_flow": 1739190501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-26",
@@ -2114,8 +2114,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 254777997.0,
       "three_month_flow": 1739190501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-27",
@@ -2125,8 +2125,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 196127999.0,
       "three_month_flow": 1739190501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-30",
@@ -2136,8 +2136,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 196127999.0,
       "three_month_flow": 1739190501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-03-31",
@@ -2147,8 +2147,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 145896000.0,
       "three_month_flow": 1739190501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-04-01",
@@ -2158,8 +2158,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 145896000.0,
       "three_month_flow": 1643220501.0,
-      "six_month_flow": 2421414239.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2421414235.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-04-02",
@@ -2169,8 +2169,8 @@
       "weekly_flow": 0.0,
       "monthly_flow": 145896000.0,
       "three_month_flow": 1643220501.0,
-      "six_month_flow": 2288462906.0,
-      "cumulative_flow": 2562404384.0
+      "six_month_flow": 2288462902.0,
+      "cumulative_flow": 2562404378.0
     },
     {
       "date": "2026-04-06",
@@ -2180,8 +2180,8 @@
       "weekly_flow": 42350000.0,
       "monthly_flow": 71958000.0,
       "three_month_flow": 1685570501.0,
-      "six_month_flow": 2260693903.0,
-      "cumulative_flow": 2604754384.0
+      "six_month_flow": 2260693899.0,
+      "cumulative_flow": 2604754378.0
     },
     {
       "date": "2026-04-07",
@@ -2191,8 +2191,8 @@
       "weekly_flow": 88454000.0,
       "monthly_flow": 118062000.0,
       "three_month_flow": 1731674501.0,
-      "six_month_flow": 2306797903.0,
-      "cumulative_flow": 2650858384.0
+      "six_month_flow": 2306797899.0,
+      "cumulative_flow": 2650858378.0
     },
     {
       "date": "2026-04-08",
@@ -2202,8 +2202,8 @@
       "weekly_flow": 88454000.0,
       "monthly_flow": 88454000.0,
       "three_month_flow": 1731674501.0,
-      "six_month_flow": 2236516590.0,
-      "cumulative_flow": 2650858384.0
+      "six_month_flow": 2236516582.0,
+      "cumulative_flow": 2650858378.0
     },
     {
       "date": "2026-04-09",
@@ -2213,8 +2213,8 @@
       "weekly_flow": 88454000.0,
       "monthly_flow": 88454000.0,
       "three_month_flow": 1731674501.0,
-      "six_month_flow": 2236516590.0,
-      "cumulative_flow": 2650858384.0
+      "six_month_flow": 2236516582.0,
+      "cumulative_flow": 2650858378.0
     },
     {
       "date": "2026-04-10",
@@ -2224,8 +2224,8 @@
       "weekly_flow": 197740000.0,
       "monthly_flow": 197740000.0,
       "three_month_flow": 1840960501.0,
-      "six_month_flow": 2345802590.0,
-      "cumulative_flow": 2760144384.0
+      "six_month_flow": 2345802582.0,
+      "cumulative_flow": 2760144378.0
     },
     {
       "date": "2026-04-13",
@@ -2235,8 +2235,8 @@
       "weekly_flow": 397989500.0,
       "monthly_flow": 440339500.0,
       "three_month_flow": 2083560001.0,
-      "six_month_flow": 2588402090.0,
-      "cumulative_flow": 3002743884.0
+      "six_month_flow": 2588402082.0,
+      "cumulative_flow": 3002743878.0
     },
     {
       "date": "2026-04-14",
@@ -2246,8 +2246,8 @@
       "weekly_flow": 691414500.0,
       "monthly_flow": 779868500.0,
       "three_month_flow": 2423089001.0,
-      "six_month_flow": 2927931090.0,
-      "cumulative_flow": 3342272884.0
+      "six_month_flow": 2927931082.0,
+      "cumulative_flow": 3342272878.0
     },
     {
       "date": "2026-04-15",
@@ -2257,8 +2257,8 @@
       "weekly_flow": 898864500.0,
       "monthly_flow": 987318500.0,
       "three_month_flow": 2565278999.0,
-      "six_month_flow": 3135381090.0,
-      "cumulative_flow": 3549722884.0
+      "six_month_flow": 3135381082.0,
+      "cumulative_flow": 3549722878.0
     },
     {
       "date": "2026-04-16",
@@ -2268,8 +2268,8 @@
       "weekly_flow": 1178449500.0,
       "monthly_flow": 1266903500.0,
       "three_month_flow": 2778543999.0,
-      "six_month_flow": 3414966090.0,
-      "cumulative_flow": 3829307884.0
+      "six_month_flow": 3414966082.0,
+      "cumulative_flow": 3829307878.0
     },
     {
       "date": "2026-04-17",
@@ -2279,8 +2279,8 @@
       "weekly_flow": 1069163500.0,
       "monthly_flow": 1266903500.0,
       "three_month_flow": 2718495998.0,
-      "six_month_flow": 3414966090.0,
-      "cumulative_flow": 3829307884.0
+      "six_month_flow": 3414966082.0,
+      "cumulative_flow": 3829307878.0
     },
     {
       "date": "2026-04-20",
@@ -2290,8 +2290,8 @@
       "weekly_flow": 966814000.0,
       "monthly_flow": 1407153500.0,
       "three_month_flow": 2759236004.0,
-      "six_month_flow": 3555216090.0,
-      "cumulative_flow": 3969557884.0
+      "six_month_flow": 3555216082.0,
+      "cumulative_flow": 3969557878.0
     },
     {
       "date": "2026-04-21",
@@ -2301,8 +2301,8 @@
       "weekly_flow": 709865000.0,
       "monthly_flow": 1489733500.0,
       "three_month_flow": 2754404007.0,
-      "six_month_flow": 3637796090.0,
-      "cumulative_flow": 4052137884.0
+      "six_month_flow": 3637796082.0,
+      "cumulative_flow": 4052137878.0
     },
     {
       "date": "2026-04-22",
@@ -2312,8 +2312,8 @@
       "weekly_flow": 502415000.0,
       "monthly_flow": 1489733500.0,
       "three_month_flow": 2733392006.0,
-      "six_month_flow": 3637796090.0,
-      "cumulative_flow": 4052137884.0
+      "six_month_flow": 3637796082.0,
+      "cumulative_flow": 4052137878.0
     },
     {
       "date": "2026-04-23",
@@ -2323,8 +2323,8 @@
       "weekly_flow": 266852000.0,
       "monthly_flow": 1533755500.0,
       "three_month_flow": 2597664002.0,
-      "six_month_flow": 3681818090.0,
-      "cumulative_flow": 4096159884.0
+      "six_month_flow": 3681818082.0,
+      "cumulative_flow": 4096159878.0
     },
     {
       "date": "2026-04-24",
@@ -2334,8 +2334,19 @@
       "weekly_flow": 266852000.0,
       "monthly_flow": 1533755500.0,
       "three_month_flow": 2425691002.0,
-      "six_month_flow": 3681818090.0,
-      "cumulative_flow": 4096159884.0
+      "six_month_flow": 3681818082.0,
+      "cumulative_flow": 4096159878.0
+    },
+    {
+      "date": "2026-04-27",
+      "close": 39.89,
+      "shares": 291800000,
+      "daily_flow": 0.0,
+      "weekly_flow": 126602000.0,
+      "monthly_flow": 1533755500.0,
+      "three_month_flow": 2282911999.0,
+      "six_month_flow": 3681818082.0,
+      "cumulative_flow": 4096159878.0
     }
   ]
 }
